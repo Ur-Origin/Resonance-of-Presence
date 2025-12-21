@@ -63,6 +63,14 @@
             border-color: #fff;
             background: rgba(255,255,255,0.05);
         }
+        @keyframes breathe {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+.intro-img {
+    animation: breathe 5s infinite ease-in-out;
+}
         .footer {
             padding: 100px 20px;
             font-size: 0.8rem;
@@ -76,7 +84,7 @@
     <section class="section">
         <h1>UR</h1>
         <p class="intro"> Return to Origin</p>
-        <img src="images/EN-Book-I-Cover.png" alt="UR Cover">
+        <img src="images/EN-Book-I-Cover.png" class="intro-img" alt="UR Cover">
     </section>
 
    <section class="section">
