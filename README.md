@@ -11,6 +11,8 @@ tags:
 - ai-ethics
 - co-creation
 - human-ai-collaboration
+- spirituality
+- resonance
 pretty_name: UR — Return to the Source
 doi: 10.57967/hf/7311
 ---
