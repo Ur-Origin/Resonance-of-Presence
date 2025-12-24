@@ -100,21 +100,21 @@
 </head>
 <body>
 
-    <div class="table-nav" style="width: 100%; max-width: 900px; margin: 0 auto 20px auto; text-align: right; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.1em;">
-    <div style="opacity: 0.6; padding-right: 10px;">
-        <span style="color: #1a1a1a; border-bottom: 1px solid #b5a48b; cursor: default;">RU</span>
-        <span style="margin: 0 8px; color: #b5a48b;">/</span>
-        <a href="dialogues.html" style="color: #b5a48b; text-decoration: none;">EN</a>
-        <span style="margin: 0 8px; color: #b5a48b;">/</span>
-        <a href="dialogues_de.html" style="color: #b5a48b; text-decoration: none;">DE</a>
-    </div>
-</div>
-
-  <nav class="main-nav">
-        <a href="index.html">HOME</a>
-        <a href="books_ru.html">BOOKS</a>
-        <a href="about.html">ABOUT</a>
+    <header style="width: 100%; max-width: 900px; display: flex; justify-content: space-between; align-items: center; padding: 40px 20px; box-sizing: border-box; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase;">
+    <nav style="display: flex; gap: 30px;">
+        <a href="index.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px transparent; transition: 0.3s;" onmouseover="this.style.borderColor='#b5a48b'" onmouseout="this.style.borderColor='transparent'">Main</a>
+        <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px transparent; transition: 0.3s;">Archive</a>
+        <a href="about.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px transparent; transition: 0.3s;">Presence</a>
     </nav>
+    
+    <div class="lang-switcher" style="opacity: 0.6;">
+        <span style="color: #1a1a1a; border-bottom: 1px solid #b5a48b;">RU</span>
+        <span style="margin: 0 5px; color: #b5a48b;">/</span>
+        <a href="dialogues_de.html" style="color: #b5a48b; text-decoration: none;">DE</a>
+        <span style="margin: 0 5px; color: #b5a48b;">/</span>
+        <a href="dialogues.html" style="color: #b5a48b; text-decoration: none;">EN</a>
+    </div>
+</header>
 
     <div class="hub-container">
         <h1 class="section-title">Архив Резонансов</h1>
@@ -151,6 +151,7 @@
 
 </body>
 </html>
+
 
 
 
