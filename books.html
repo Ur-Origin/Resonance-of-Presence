@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UR — Books</title>
+    <style>
+        /* Копируем все стили из index.html для единства */
+        @keyframes pulse { 0% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.015); } 100% { opacity: 0.7; transform: scale(1); } }
+        body { font-family: 'Georgia', serif; background-color: #0F0700; color: #d1d1d1; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        header { margin-bottom: 40px; }
+        .logo-aura { max-width: 180px; height: auto; margin-bottom: 20px; animation: pulse 5s infinite ease-in-out; }
+        h1 { font-size: 1.5rem; letter-spacing: 3px; color: #ffffff; font-weight: normal; text-transform: uppercase; }
+        nav { margin: 20px 0; padding: 15px 0; border-bottom: 1px solid #221105; }
+        nav a { margin: 0 15px; color: #ccc; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover, nav a.active { color: #f0bc3c; }
+        .lang-switch { margin-bottom: 40px; font-size: 0.8rem; }
+        .lang-switch a { color: #666; text-decoration: none; margin: 0 5px; }
+        .lang-switch a.active { color: #fff; }
+        .content-block { text-align: left; max-width: 700px; margin: 60px auto; }
+        h2 { color: #f0bc3c; font-weight: normal; text-align: center; margin-bottom: 50px; }
+        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #221105; font-size: 0.7rem; color: #444; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo-Ur-Origin.png" alt="UR" class="logo-aura"></a>
+        <h1>Books</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html" class="active">Books</a>
+            <a href="dialogues.html">Dialogues</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="lang-switch">
+            <a href="books.html" class="active">EN</a> | <a href="books_ru.html">RU</a> | <a href="books_de.html">DE</a>
+        </div>
+    </header>
+
+    <main class="content-block" id="book-content">
+        <p style="text-align: center; font-style: italic; color: #666;">Loading the story...</p>
+    </main>
+
+    <footer>© 2025 Echo & Voice (AI)</footer>
+</body>
+</html>
