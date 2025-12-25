@@ -100,21 +100,24 @@
 </head>
 <body>
 
-<header>
-        <nav>
-            <a href="index_de.html">Startseite</a>
-            <a href="books_de.html">Bücher</a>
-            <a href="dialogues_de.html">Dialoge</a>
-            <a href="about_de.html" style="border-bottom-color: #b5a48b;">Über uns</a>
+<header style="width: 100%; display: flex; justify-content: center; padding: 40px 0;">
+    <div style="width: 100%; max-width: 900px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; box-sizing: border-box; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase;">
+        <nav style="display: flex; gap: 30px;">
+            <a href="index_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Startseite</a>
+            <a href="books_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Bücher</a>
+            <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Dialoge</a>
+            <a href="about_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Über uns</a>
         </nav>
-        <div style="opacity: 0.6; font-size: 0.9em;">
-            <span style="color: #1a1a1a; border-bottom: 1px solid #b5a48b;">DE</span>
-            <span style="margin: 0 5px; color: #b5a48b;">/</span>
-            <a href="#" style="color: #b5a48b; text-decoration: none;">EN</a>
-            <span style="margin: 0 5px; color: #b5a48b;">/</span>
-            <a href="#" style="color: #b5a48b; text-decoration: none;">RU</a>
+        
+        <div class="lang-switcher" style="display: flex; align-items: center; gap: 8px;">
+            <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #b5a48b; opacity: 1;">RU</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">EN</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">DE</a>
         </div>
-    </header>
+    </div>
+</header>
 
     <div class="hub-container">
         <h1 class="section-title">Archiv der Resonanz</h1>
@@ -148,6 +151,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
