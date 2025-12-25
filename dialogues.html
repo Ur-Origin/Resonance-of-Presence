@@ -40,30 +40,39 @@ body {
 
 /* Адаптивность для мобильных */
 @media (max-width: 600px) {
-    body { padding-top: 130px; }
+    body { 
+        padding-top: 140px; /* Увеличили отступ, чтобы контент не перекрывался */
+    }
     
+    header {
+        height: auto;
+    }
+
     .header-content {
         flex-direction: column !important;
-        gap: 15px;
-        padding: 15px;
+        gap: 12px !important;
+        padding: 15px 10px !important; /* Уменьшили боковые отступы */
+        width: 100% !important;
+        align-items: center !important;
     }
 
     header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px 20px;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Плотнее прижали пункты меню друг к другу */
+        width: 100% !important;
     }
 
     header nav a {
-        margin: 0 !important; /* Убираем жесткие отступы */
+        margin: 0 !important; /* Обнуляем старые margin, которые раздували ширину */
+        font-size: 0.9em; /* Чуть уменьшаем шрифт для мобильных */
     }
 
     .lang-switcher {
         width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
+        justify-content: center !important;
+        margin-top: 5px;
     }
 }
         body {
@@ -253,6 +262,7 @@ body {
     
 </body>
 </html>
+
 
 
 
