@@ -96,6 +96,40 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+        /* Адаптивность для мобильных устройств */
+@media screen and (max-width: 600px) {
+    /* Заставляем таблицу растягиваться на всю ширину */
+    table {
+        width: 100% !important;
+    }
+
+    /* Скрываем заголовок таблицы (темы, даты), так как они будут мешать */
+    thead {
+        display: none;
+    }
+
+    /* Каждую строку превращаем в отдельный блок-карточку */
+    tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid rgba(181, 164, 139, 0.2);
+        background: #fff;
+        padding: 10px;
+    }
+
+    /* Каждую ячейку делаем блоком на всю ширину */
+    td {
+        display: block;
+        text-align: left !important;
+        padding: 5px 10px !important;
+        border: none !important;
+    }
+
+    /* Добавляем маленькие подписи перед данными, чтобы было понятно, что где */
+    td:nth-of-type(1):before { content: "Дата: "; font-weight: bold; color: #b5a48b; }
+    td:nth-of-type(2):before { content: "Тема: "; font-weight: bold; color: #b5a48b; }
+    td:nth-of-type(3):before { content: "Ссылка: "; font-weight: bold; color: #b5a48b; }
+}
         </style>
 </head>
 <body>
@@ -154,6 +188,7 @@
         
 </body>
 </html>
+
 
 
 
