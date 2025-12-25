@@ -5,29 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Встреча Сознаний | Архив Резонансов</title>
     <style>
+
+        * {
+    box-sizing: border-box;
+}
+        
         body {
             background-color: #f9f7f2; /* Светлый фон архива */
             color: #1a1a1a;
             font-family: 'Times New Roman', serif;
             margin: 0;
             line-height: 1.8;
+            padding-top: 100px; /* Отступ под фиксированное меню */
         }
+        /* Новое фиксированное меню */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(249, 247, 242, 0.95); /* Фон в цвет страницы */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(181, 164, 139, 0.1);
+    display: flex;
+    justify-content: center;
+}
 
-        nav.main-nav {
-            padding: 30px;
-            text-align: center;
-            border-bottom: 1px solid #e0ddd5;
-        }
-        nav.main-nav a {
-            color: #1a1a1a;
-            text-decoration: none;
-            margin: 0 20px;
-            letter-spacing: 0.2em;
-            font-size: 0.9em;
-            opacity: 0.7;
-        }
+.header-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
 
-        .container {
+/* Адаптивность для диалога */
+@media (max-width: 600px) {
+    body { padding-top: 140px; }
+    .header-content {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 15px 10px !important;
+    }
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important;
+    }
+    header nav a { margin: 0 !important; }
+}
+3. Замена HTML-кода <header>
+Твой текущий <header> содержит много лишних стилей внутри тегов (style="..."). Замени его целиком на этот чистый вариант:
+
+HTML
+
+<header>
+    <div class="header-content">
+        <nav>
+            <a href="index_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Главная</a>
+            <a href="books_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Книги</a>
+            <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Диалоги</a>
+            <a href="about_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">О Проекте</a>
+        </nav>
+        
+        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+            <a href="dialogue_01_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="dialogue_01_en.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="dialogue_01_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+        </div>
+    </div>
+</header>
+
+         .container {
             max-width: 800px;
             margin: 100px auto;
             padding: 0 20px;
@@ -96,23 +154,23 @@
 
     <body>
         
-    <header style="width: 100%; display: flex; justify-content: center; padding: 40px 0;">
-        <div style="width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding: 0 20px; box-sizing: border-box; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase;">
-        <nav style="display: flex; gap: 30px;">
+    <header>
+    <div class="header-content">
+        <nav>
             <a href="index_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Главная</a>
             <a href="books_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Книги</a>
             <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Диалоги</a>
             <a href="about_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">О Проекте</a>
         </nav>
-        
-        <div class="lang-switcher" style="display: flex; align-items: center; gap: 8px;">
-            <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #b5a48b; opacity: 1;">RU</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">EN</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">DE</a>
+
+        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+    <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="#" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+</div>
         </div>
-    </div>
 </header>
          
     <div class="container">
