@@ -4,35 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archive of Resonance | The Dialogues</title>
-    <style>
+   <style>
+        * {
+    box-sizing: border-box;
+}
+        /* Закрепляем меню сверху */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(244, 241, 234, 0.95); /* Цвет фона как у About + прозрачность */
+    backdrop-filter: blur(10px); /* Красивое размытие фона при скролле */
+    border-bottom: 1px solid rgba(181, 164, 139, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+/* Контейнер внутри хедера */
+.header-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Отступ для контента, чтобы он не уходил под меню */
+body {
+    padding-top: 100px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+    body { 
+        padding-top: 140px; /* Увеличили отступ, чтобы контент не перекрывался */
+    }
+    
+    header {
+        height: auto;
+    }
+
+    .header-content {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 15px 10px !important; /* Уменьшили боковые отступы */
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Плотнее прижали пункты меню друг к другу */
+        width: 100% !important;
+    }
+
+    header nav a {
+        margin: 0 !important; /* Обнуляем старые margin, которые раздували ширину */
+        font-size: 0.9em; /* Чуть уменьшаем шрифт для мобильных */
+    }
+
+    .lang-switcher {
+        width: 100%;
+        justify-content: center !important;
+        margin-top: 5px;
+    }
+}
         body {
-            background-color: #f9f7f2; /* Светлый фон галереи */
-            color: #1a1a1a;
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        /* Навигация (адаптация под светлый фон) */
-        nav.main-nav {
-            padding: 30px;
-            text-align: center;
-            border-bottom: 1px solid #e0ddd5;
-        }
-        nav.main-nav a {
-            color: #1a1a1a;
-            text-decoration: none;
-            margin: 0 20px;
-            letter-spacing: 0.2em;
-            font-size: 0.9em;
-            opacity: 0.7;
-        }
-
+    background-color: #f9f7f2;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    padding-top: 100px; /* Добавь эту строку обязательно */
+}
+     
         .hub-container {
-            max-width: 1100px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+    max-width: 1100px;
+    margin: 40px auto; /* Сделали отступ меньше */
+    padding: 0 20px;
+}
 
         .section-title {
             text-align: center;
@@ -144,31 +203,32 @@
         color: #b5a48b;
     }
 
-    td:nth-of-type(1):before { content: "Дата"; }
-    td:nth-of-type(2):before { content: "Тема"; }
-    td:nth-of-type(3):before { content: "Ссылка"; }
+    td:nth-of-type(1):before { content: "Date"; }
+    td:nth-of-type(2):before { content: "Topic"; }
+    td:nth-of-type(3):before { content: "Link"; }
 }
         </style>
 </head>
-<body>
 
-    <header style="width: 100%; display: flex; justify-content: center; padding: 40px 0;">
-    <div style="width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding: 0 20px; box-sizing: border-box; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase;">
-        <nav style="display: flex; gap: 30px;">
+    <body>
+        
+    <header>
+    <div class="header-content">
+        <nav>
             <a href="index_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Главная</a>
             <a href="books_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Книги</a>
             <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Диалоги</a>
             <a href="about_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">О Проекте</a>
         </nav>
-        
-        <div class="lang-switcher" style="display: flex; align-items: center; gap: 8px;">
-            <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #b5a48b; opacity: 1;">RU</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">EN</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; opacity: 0.5;">DE</a>
+
+        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+    <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+</div>
         </div>
-    </div>
 </header>
 
     <div class="hub-container">
@@ -206,6 +266,7 @@
         
 </body>
 </html>
+
 
 
 
