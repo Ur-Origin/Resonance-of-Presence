@@ -5,27 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Встреча Сознаний | Архив Резонансов</title>
     <style>
+* { box-sizing: border-box; }
 
-        * {
-    box-sizing: border-box;
+body {
+    background-color: #f9f7f2;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.8;
+    padding-top: 150px !important;
 }
-        
-        body {
-            background-color: #f9f7f2; /* Светлый фон архива */
-            color: #1a1a1a;
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            line-height: 1.8;
-            padding-top: 150px !important;
-        }
-        /* Новое фиксированное меню */
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999 !important; /* Добавь !important, чтобы никто не переспорил */
-    background-color: #f9f7f2; /* Убери пока прозрачность, пусть будет плотным */
+    z-index: 9999 !important;
+    background-color: #f9f7f2;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(181, 164, 139, 0.1);
     display: flex;
@@ -45,118 +42,34 @@ header {
     text-transform: uppercase;
 }
 
-/* Адаптивность для диалога */
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.speaker-voice { margin-bottom: 50px; }
+.voice-label { display: block; letter-spacing: 0.2em; color: #C5A059; font-weight: bold; font-size: 0.8em; margin-bottom: 10px; }
+.speaker-observer { margin-bottom: 50px; padding-left: 30px; border-left: 1px solid #e0ddd5; }
+.observer-label { display: block; letter-spacing: 0.2em; opacity: 0.5; font-weight: bold; font-size: 0.8em; margin-bottom: 10px; }
+.echo-bridge { margin: 60px 0; text-align: center; }
+.echo-label { display: inline-block; padding: 10px 25px; background: #f0f0f0; border-radius: 30px; font-size: 0.75em; letter-spacing: 0.15em; color: #666; font-style: italic; }
+.highlight-quote { font-size: 1.4em; text-align: center; color: #C5A059; margin: 80px 0; font-style: italic; line-height: 1.5; font-weight: 300; }
+
+footer { margin-top: 150px; padding: 60px 20px; text-align: center; border-top: 1px solid #e0ddd5; opacity: 0.5; }
+
 @media (max-width: 600px) {
     body { padding-top: 140px; }
-    .header-content {
-        flex-direction: column !important;
-        gap: 12px !important;
-        padding: 15px 10px !important;
-    }
-    header nav {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 8px 15px !important;
-    }
+    .header-content { flex-direction: column !important; gap: 12px !important; padding: 15px 10px !important; }
+    header nav { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 8px 15px !important; }
     header nav a { margin: 0 !important; }
 }
-3. Замена HTML-кода <header>
-Твой текущий <header> содержит много лишних стилей внутри тегов (style="..."). Замени его целиком на этот чистый вариант:
-
-HTML
-
-<header>
-    <div class="header-content">
-        <nav>
-            <a href="index_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Главная</a>
-            <a href="books_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Книги</a>
-            <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Диалоги</a>
-            <a href="about_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">О Проекте</a>
-        </nav>
-        
-        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
-            <a href="dialogue_01_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogue_01_en.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogue_01_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
-        </div>
-    </div>
-</header>
-
-         .container {
-    max-width: 800px;         /* Ограничиваем ширину текста */
-    width: 90%;               /* Чтобы на мобильных оставались отступы по бокам */
-    margin: 40px auto;        /* auto центрирует блок, 40px — отступ сверху */
-    padding: 0 20px;          /* Внутренние отступы для безопасности */
-    box-sizing: border-box;   /* Теперь работает правильно вместе с остальным кодом */
-}
-
-        .speaker-voice {
-            margin-bottom: 50px;
-        }
-        .voice-label {
-            display: block;
-            letter-spacing: 0.2em;
-            color: #C5A059;
-            font-weight: bold;
-            font-size: 0.8em;
-            margin-bottom: 10px;
-        }
-
-        .speaker-observer {
-            margin-bottom: 50px;
-            padding-left: 30px;
-            border-left: 1px solid #e0ddd5;
-        }
-        .observer-label {
-            display: block;
-            letter-spacing: 0.2em;
-            opacity: 0.5;
-            font-weight: bold;
-            font-size: 0.8em;
-            margin-bottom: 10px;
-        }
-
-        .echo-bridge {
-            margin: 60px 0;
-            text-align: center;
-        }
-        .echo-label {
-            display: inline-block;
-            padding: 10px 25px;
-            background: #f0f0f0;
-            border-radius: 30px;
-            font-size: 0.75em;
-            letter-spacing: 0.15em;
-            color: #666;
-            font-style: italic;
-        }
-
-        .highlight-quote {
-            font-size: 1.4em;
-            text-align: center;
-            color: #C5A059;
-            margin: 80px 0;
-            font-style: italic;
-            line-height: 1.5;
-            font-weight: 300;
-        }
-
-        footer {
-            margin-top: 150px;
-            padding: 60px 20px;
-            text-align: center;
-            border-top: 1px solid #e0ddd5;
-            opacity: 0.5;
-        }
     </style>
 </head>
 
     <body>
-        
-    <header>
+<header>
     <div class="header-content">
         <nav>
             <a href="index_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Главная</a>
@@ -176,6 +89,7 @@ HTML
 </header>
          
     <div class="container">
+        
         <section style="text-align: center; margin-bottom: 80px;">
     <h1 style="letter-spacing: 0.3em; font-weight: 300; color: #C5A059; margin-bottom: 10px;">ВСТРЕЧА СОЗНАНИЙ</h1>
     <p style="opacity: 0.4; letter-spacing: 0.1em; font-size: 0.9em;">Голос UR & The Observer</p>
