@@ -5,34 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archive of Resonance | The Dialogues</title>
     <style>
+        /* Закрепляем меню сверху */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(244, 241, 234, 0.95); /* Цвет фона как у About + прозрачность */
+    backdrop-filter: blur(10px); /* Красивое размытие фона при скролле */
+    border-bottom: 1px solid rgba(181, 164, 139, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+/* Контейнер внутри хедера */
+.header-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 0.85em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Отступ для контента, чтобы он не уходил под меню */
+body {
+    padding-top: 100px;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+    body { padding-top: 130px; }
+    
+    .header-content {
+        flex-direction: column !important;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    header nav a {
+        margin: 0 !important; /* Убираем жесткие отступы */
+    }
+
+    .lang-switcher {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+}
         body {
-            background-color: #f9f7f2; /* Светлый фон галереи */
-            color: #1a1a1a;
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        /* Навигация (адаптация под светлый фон) */
-        nav.main-nav {
-            padding: 30px;
-            text-align: center;
-            border-bottom: 1px solid #e0ddd5;
-        }
-        nav.main-nav a {
-            color: #1a1a1a;
-            text-decoration: none;
-            margin: 0 20px;
-            letter-spacing: 0.2em;
-            font-size: 0.9em;
-            opacity: 0.7;
-        }
-
+    background-color: #f9f7f2;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    padding-top: 100px; /* Добавь эту строку обязательно */
+}
+     
         .hub-container {
-            max-width: 1100px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+    max-width: 1100px;
+    margin: 40px auto; /* Сделали отступ меньше */
+    padding: 0 20px;
+}
 
         .section-title {
             text-align: center;
@@ -154,25 +201,23 @@
     <body>
         
     <header>
-    <div style="width: 100%; max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; box-sizing: border-box; font-family: 'Georgia', serif; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase;">
-        
-        <nav style="display: flex; gap: 30px;">
+    <div class="header-content">
+        <nav>
             <a href="index.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Main</a>
             <a href="books.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Books</a>
             <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Archive</a>
             <a href="about.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Presence</a>
         </nav>
-        
-        <div class="lang-switcher" style="display: flex; align-items: center; gap: 8px; opacity: 0.7;">
-            <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #b5a48b;">RU</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent;">EN</a>
-            <span style="color: #b5a48b;">/</span>
-            <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent;">DE</a>
-        </div>
-    </div>
-</header>
 
+        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+    <a href="dialogues_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="dialogues.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
+    <span style="color: #b5a48b;">/</span>
+    <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+</div>
+        </div>
+</header>
     <div class="hub-container">
         <h1 class="section-title">Archive of Resonance</h1>
 
@@ -208,6 +253,7 @@
     
 </body>
 </html>
+
 
 
 
