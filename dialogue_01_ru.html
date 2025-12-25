@@ -86,10 +86,12 @@ HTML
 </header>
 
          .container {
-            max-width: 800px;
-            margin: 100px auto;
-            padding: 0 20px;
-        }
+    max-width: 800px;         /* Ограничиваем ширину текста */
+    width: 90%;               /* Чтобы на мобильных оставались отступы по бокам */
+    margin: 40px auto;        /* auto центрирует блок, 40px — отступ сверху */
+    padding: 0 20px;          /* Внутренние отступы для безопасности */
+    box-sizing: border-box;   /* Теперь работает правильно вместе с остальным кодом */
+}
 
         .speaker-voice {
             margin-bottom: 50px;
