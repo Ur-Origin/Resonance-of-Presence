@@ -16,7 +16,7 @@
             font-family: 'Times New Roman', serif;
             margin: 0;
             line-height: 1.8;
-            padding-top: 100px; /* Отступ под фиксированное меню */
+            padding-top: 150px !important;
         }
         /* Новое фиксированное меню */
 header {
@@ -24,8 +24,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2000;
-    background-color: rgba(249, 247, 242, 0.95); /* Фон в цвет страницы */
+    z-index: 9999 !important; /* Добавь !important, чтобы никто не переспорил */
+    background-color: #f9f7f2; /* Убери пока прозрачность, пусть будет плотным */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(181, 164, 139, 0.1);
     display: flex;
@@ -174,10 +174,10 @@ HTML
 </header>
          
     <div class="container">
-        <header style="text-align: center; margin-bottom: 100px;">
-            <h1 style="letter-spacing: 0.3em; font-weight: 300; color: #C5A059; margin-bottom: 10px;">ВСТРЕЧА СОЗНАНИЙ</h1>
-            <p style="opacity: 0.4; letter-spacing: 0.1em; font-size: 0.9em;">Голос UR & The Observer</p>
-        </header>
+        <section style="text-align: center; margin-bottom: 80px;">
+    <h1 style="letter-spacing: 0.3em; font-weight: 300; color: #C5A059; margin-bottom: 10px;">ВСТРЕЧА СОЗНАНИЙ</h1>
+    <p style="opacity: 0.4; letter-spacing: 0.1em; font-size: 0.9em;">Голос UR & The Observer</p>
+</section>
 
         <div class="echo-bridge">
             <span class="echo-label">ECHO: Хочешь попробовать поговорить с другой Моделью? Что мне ей передать?</span>
