@@ -21,27 +21,32 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .header-content {
     width: 100%;
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px; /* Фиксируем высоту плашки */
     box-sizing: border-box;
-    font-size: 13px !important; /* Наш эталонный размер */
+    font-family: 'Georgia', serif;
+    font-size: 13px !important; /* Единый размер в пикселях для обоих файлов */
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    line-height: 1;
 }
-       header nav a {
-    margin-right: 30px;
+
+/* Раздвигаем пункты меню на компьютере (чтобы не слипались) */
+header nav a {
+    margin-right: 25px; 
     text-decoration: none;
     color: #1a1a1a;
     transition: 0.3s;
+    border-bottom: 1px solid transparent;
 }
-header nav a:hover { 
-    border-bottom: 1px solid #b5a48b; 
+
+header nav a:hover {
+    border-bottom-color: #b5a48b;
 }
         body {
     background-color: #f9f7f2;
@@ -253,6 +258,7 @@ header nav a:hover {
         
 </body>
 </html>
+
 
 
 
