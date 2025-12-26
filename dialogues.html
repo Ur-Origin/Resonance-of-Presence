@@ -128,25 +128,43 @@ header nav a:hover {
         }
       @media (max-width: 600px) {
     body { 
-        padding-top: 140px !important; 
+        padding-top: 140px !important; /* Единый отступ сверху для контента */
+    }
+
+    .header-content {
+        flex-direction: column !important; /* Складываем меню в столбик */
+        gap: 12px !important; /* Расстояние между названием и кнопками */
+        padding: 15px 10px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        width: 100% !important;
+    }
+
+    header nav a {
+        margin: 0 !important;
+        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        letter-spacing: 0.1em !important;
+    }
+
+    .lang-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        margin-top: 5px;
+        gap: 10px !important;
     }
     
-    .header-content { 
-        flex-direction: column !important; 
-        gap: 12px !important; 
-        padding: 15px 10px !important; 
+    .lang-switcher a {
+        font-size: 11px !important;
     }
-    
-    header nav { 
-        display: flex !important; 
-        flex-wrap: wrap !important; 
-        justify-content: center !important; 
-        gap: 8px 15px !important; 
-    }
-    
-    header nav a { 
-        margin: 0 !important; 
-    }
+}
 
     /* Если на этой странице есть таблица, добавь ее настройки сюда же */
     .main-container {
@@ -258,6 +276,7 @@ header nav a:hover {
     
 </body>
 </html>
+
 
 
 
