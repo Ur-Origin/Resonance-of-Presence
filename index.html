@@ -34,33 +34,37 @@
         }
 
         /* --- НОВОЕ ФИКСИРОВАННОЕ МЕНЮ (ЗОЛОТОЙ СТАНДАРТ) --- */
+        /* --- ИСПРАВЛЕННОЕ ФИКСИРОВАННОЕ МЕНЮ --- */
         header {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 100vw; /* Заставляем меню игнорировать 800px у body и брать всю ширину окна */
             z-index: 10000;
-            background-color: #0F0700; /* Цвет фона вашего сайта */
-            border-bottom: 1px solid rgba(197, 160, 89, 0.2); /* Тонкая золотистая линия */
+            background-color: #0F0700;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
             display: flex;
             justify-content: center;
         }
 
         .header-content {
             width: 100%;
-            max-width: 800px;
+            max-width: 800px; /* Ограничиваем контент внутри меню так же, как текст на странице */
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
+            box-sizing: border-box; /* Чтобы padding не раздувал ширину */
             text-transform: uppercase;
             letter-spacing: 0.15em;
-            font-size: 12px;
+            font-size: 13px; /* Вернул 13px как в эталоне */
+            font-family: 'Georgia', serif;
         }
 
         header nav a {
-            margin-right: 20px;
-            color: #d1d1d1 !important; /* Светлый текст из вашего дизайна */
+            margin-right: 25px !important; /* Эталонный отступ */
+            color: #d1d1d1 !important;
+            text-decoration: none;
         }
 
         .lang-switcher {
