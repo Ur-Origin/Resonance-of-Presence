@@ -65,26 +65,31 @@
         }
 
         /* 3. ГЕОМЕТРИЯ ВЕРХНЕЙ ЧАСТИ (Чтобы не было наезда меню на логотип) */
-        .hero-section {
-            padding-top: 100px; 
-            margin-bottom: 40px;
-        }
+        /* Вставьте это в ОБА файла */
+.hero-section {
+    padding-top: 100px; /* Фиксированный отступ от меню */
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .logo-aura { 
-            max-width: 180px; /* Размер из вашего кода books */
-            height: auto; 
-            margin-bottom: 20px; 
-            animation: pulse 5s infinite ease-in-out; 
-        }
+.logo-aura { 
+    max-width: 180px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    animation: pulse 5s infinite ease-in-out; 
+}
 
-        h1 { 
-            font-size: 1.5rem; /* Размер из вашего кода books */
-            letter-spacing: 3px; 
-            color: #ffffff; 
-            font-weight: normal; 
-            text-transform: uppercase; 
-        }
-
+h1 { 
+    font-family: 'Georgia', serif !important; /* Гарантируем одинаковый шрифт */
+    font-size: 1.5rem !important; 
+    letter-spacing: 3px !important; 
+    color: #ffffff; 
+    font-weight: normal; 
+    text-transform: uppercase;
+    margin: 0;
+}
         h2, h3, section {
     scroll-margin-top: 100px;
 }
