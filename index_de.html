@@ -76,11 +76,30 @@
         }
 
         /* --- ЛОГОТИП (ТЕПЕРЬ НИЖЕ МЕНЮ) --- */
-        .hero-section {
-            padding-top: 100px; /* Отступ, чтобы не пряталось под меню */
-            margin-bottom: 40px;
-        }
+       .hero-section {
+    padding-top: 100px; /* Фиксированный отступ от меню */
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.logo-aura { 
+    max-width: 180px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    animation: pulse 5s infinite ease-in-out; 
+}
+
+h1 { 
+    font-family: 'Georgia', serif !important; /* Гарантируем одинаковый шрифт */
+    font-size: 1.5rem !important; 
+    letter-spacing: 3px !important; 
+    color: #ffffff; 
+    font-weight: normal; 
+    text-transform: uppercase;
+    margin: 0;
+}
         /* --- ФИНАЛЬНАЯ ГВАРДИЯ: МОБИЛЬНАЯ АДАПТАЦИЯ ИЗ ЭТАЛОНА --- */
     @media (max-width: 600px) {
         body { 
