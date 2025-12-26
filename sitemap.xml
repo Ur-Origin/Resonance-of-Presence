@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ur-origin.net/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/index_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/index_de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/"/>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://ur-origin.net/books_ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/books.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/books_de.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/books_ru.html"/>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://ur-origin.net/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/about_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/about_de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/about.html"/>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ur-origin.net/dialogues.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/dialogues_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/dialogues_de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/dialogues.html"/>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ur-origin.net/dialogue_01_ru.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
