@@ -5,113 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über uns | Resonanz der Präsenz</title>
     <style>
-        body {
-            background-color: #f4f1ea;
-            color: #1a1a1a;
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
-        /* Общее меню */
-        header {
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 20px;
-            box-sizing: border-box;
-            font-size: 0.85em;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-        }
+    body {
+        background-color: #f4f1ea;
+        color: #1a1a1a;
+        font-family: 'Georgia', serif;
+        line-height: 1.8;
+        margin: 0;
+        padding-top: 150px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        header nav a {
-            color: #1a1a1a;
-            text-decoration: none;
-            margin-right: 30px;
-            border-bottom: 1px solid transparent;
-            transition: 0.3s;
-        }
+    /* --- ЭТАЛОННОЕ МЕНЮ (СИНХРОНИЗИРОВАНО) --- */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: rgba(244, 241, 234, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(181, 164, 139, 0.1);
+        display: flex;
+        justify-content: center;
+    }
 
-        header nav a:hover { border-bottom-color: #b5a48b; }
+    .header-content {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px; /* Фиксированный отступ как в диалогах */
+        font-size: 13px !important; /* Наш эталонный размер */
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        line-height: 1;
+    }
 
-        /* Основной контейнер с двумя колонками */
-        .main-container {
-            display: flex;
-            max-width: 1000px;
-            width: 95%;
-            margin-top: 40px;
-            background-color: #ffffff; /* Белый фон всей области или только текста */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-radius: 2px;
-            overflow: hidden; /* Чтобы картинка не вылезала за края */
-        }
+    header nav a {
+        color: #1a1a1a;
+        text-decoration: none;
+        margin-right: 25px; /* Раздвигаем пункты меню на десктопе */
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+        font-family: 'Georgia', serif;
+    }
 
-        /* Левая колонка с текстом */
-        .text-column {
-            flex: 1;
-            padding: 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: justify;
-        }
+    header nav a:hover { 
+        border-bottom-color: #b5a48b; 
+    }
 
-        .text-column h1 {
-            font-weight: normal;
-            font-size: 1.8em;
-            letter-spacing: 0.3em;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            text-align: left;
-        }
+    .lang-switcher a {
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 
-        .about-text p {
-            margin-bottom: 25px;
-            font-size: 1.05em;
-            color: #333;
-        }
+    /* --- КОНТЕНТ СТРАНИЦЫ --- */
+    .main-container {
+        display: flex;
+        max-width: 1000px;
+        width: 95%;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 2px;
+        overflow: hidden;
+    }
 
-        /* Правая колонка с изображением */
-        .image-column {
-            flex: 1;
-            background-image: url('https://ur-origin.github.io/Resonance-of-Presence/images/Light-That-breathes.webp');
-            background-size: cover;
-            background-position: center;
-            min-height: 600px;
-        }
+    .text-column {
+        flex: 1;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
 
-        .gratitude {
-            margin-top: 40px;
-            font-style: italic;
-            color: #b5a48b;
-            text-align: left;
-        }
+    .text-column h1 {
+        font-weight: normal;
+        font-size: 1.8em;
+        letter-spacing: 0.3em;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: left;
+    }
 
-        footer {
-            width: 100%;
-            margin-top: 80px;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.8em;
-            letter-spacing: 0.1em;
-            color: #b5a48b;
-            opacity: 0.7;
-        }
+    .about-text p {
+        margin-bottom: 25px;
+        font-size: 1.05em;
+        color: #333;
+    }
 
-        /* Адаптивность для мобильных */
-        @media (max-width: 800px) {
-            .main-container { flex-direction: column; }
-            .image-column { min-height: 300px; order: -1; } /* Картинка сверху на мобильных */
-        }
-    </style>
+    .image-column {
+        flex: 1;
+        background-image: url('https://ur-origin.github.io/Resonance-of-Presence/images/Light-That-breathes.webp');
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+    }
+
+    .gratitude {
+        margin-top: 40px;
+        font-style: italic;
+        color: #b5a48b;
+        text-align: left;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 80px;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        color: #b5a48b;
+        opacity: 0.7;
+    }
+
+    /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
+    @media (max-width: 600px) {
+    body { 
+        padding-top: 140px !important; /* Единый отступ сверху для контента */
+    }
+
+    .header-content {
+        flex-direction: column !important; /* Складываем меню в столбик */
+        gap: 12px !important; /* Расстояние между названием и кнопками */
+        padding: 15px 10px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        width: 100% !important;
+    }
+
+    header nav a {
+        margin: 0 !important;
+        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        letter-spacing: 0.1em !important;
+    }
+
+    .lang-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        margin-top: 5px;
+        gap: 10px !important;
+    }
+    
+    .lang-switcher a {
+        font-size: 11px !important;
+    }
+}
+</style>
 </head>
 <body>
 
