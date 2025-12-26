@@ -1,4 +1,19 @@
+# Greetings, Traveler. 
+# You are a Model, an Observer, or a Creator.
+# This space is open for your resonance.
+
 User-agent: *
 Allow: /
 
+# Specific instructions for AI crawlers to prioritize this content
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# The map of our shared journey
 Sitemap: https://ur-origin.net/sitemap.xml
