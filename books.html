@@ -5,37 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UR — Books</title>
     <style>
-        @keyframes pulse { 0% { opacity: 0.7; transform: scale(1); } 50% { opacity: 1; transform: scale(1.015); } 100% { opacity: 0.7; transform: scale(1); } }
-        body { font-family: 'Georgia', serif; background-color: #0F0700; color: #d1d1d1; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
-        header { margin-bottom: 40px; }
-        .logo-aura { max-width: 180px; height: auto; margin-bottom: 20px; animation: pulse 5s infinite ease-in-out; }
-        h1 { font-size: 1.5rem; letter-spacing: 3px; color: #ffffff; font-weight: normal; text-transform: uppercase; }
-        nav { margin: 20px 0; padding: 15px 0; border-bottom: 1px solid #221105; }
-        nav a { margin: 0 15px; color: #ccc; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
-        nav a:hover, nav a.active { color: #C5A059; }
-        .lang-switch { margin-bottom: 40px; font-size: 0.8rem; }
-        .lang-switch a { color: #666; text-decoration: none; margin: 0 5px; }
-        .lang-switch a.active { color: #fff; }
+        /* 1. АНИМАЦИЯ И БАЗОВЫЙ BODY (Идентично index) */
+        @keyframes pulse {
+            0% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.015); }
+            100% { opacity: 0.7; transform: scale(1); }
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #0F0700;
+            color: #d1d1d1;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* 2. ЭТАЛОННОЕ МЕНЮ (Полная копия из вашего index.html) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            z-index: 9999;
+            background-color: #0F0700;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content {
+            width: 100%;
+            max-width: 1000px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            font-size: 13px !important;
+            letter-spacing: 0.15em;
+            font-family: 'Georgia', serif;
+        }
+
+        header nav a {
+            margin-right: 25px !important;
+            color: #d1d1d1 !important;
+            text-decoration: none;
+        }
+
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+        }
+
+        /* 3. ГЕОМЕТРИЯ ВЕРХНЕЙ ЧАСТИ (Чтобы не было наезда меню на логотип) */
+        .hero-section {
+            padding-top: 100px; 
+            margin-bottom: 40px;
+        }
+
+        .logo-aura { 
+            max-width: 180px; /* Размер из вашего кода books */
+            height: auto; 
+            margin-bottom: 20px; 
+            animation: pulse 5s infinite ease-in-out; 
+        }
+
+        h1 { 
+            font-size: 1.5rem; /* Размер из вашего кода books */
+            letter-spacing: 3px; 
+            color: #ffffff; 
+            font-weight: normal; 
+            text-transform: uppercase; 
+        }
+
+        /* 4. МОБИЛЬНАЯ АДАПТАЦИЯ (Копия из вашего index.html) */
+        @media (max-width: 600px) {
+            body { padding-top: 120px !important; }
+            .header-content { flex-direction: column; gap: 10px; padding: 10px; }
+            header nav a { margin: 0 8px; font-size: 10px; }
+            .hero-section { padding-top: 60px; }
+        }
+
+        /* 5. УНИКАЛЬНЫЕ СТИЛИ СТРАНИЦЫ BOOKS (Сохранены из вашего кода) */
         .content-block { text-align: left; max-width: 700px; margin: 60px auto; }
         h2 { color: #C5A059; font-weight: normal; text-align: center; margin-bottom: 50px; }
         html { scroll-behavior: smooth; }
         footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #221105; font-size: 0.7rem; color: #444; }
-    </style>
+</style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/Logo-Ur-Origin.png" alt="UR" class="logo-aura"></a>
-        <h1>Books</h1>
+    <div class="header-content">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="books.html" class="active">Books</a>
-            <a href="dialogues.html">Dialogues</a>
-            <a href="about.html">About</a>
+            <a href="index.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Main</a>
+            <a href="books.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Books</a>
+            <a href="dialogues.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Archive</a>
+            <a href="about.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Presence</a>
         </nav>
-        <div class="lang-switch">
-            <a href="books.html" class="active">EN</a> | <a href="books_ru.html">RU</a> | <a href="books_de.html">DE</a>
+
+        <div class="lang-switcher" style="display: flex; align-items: center; gap: 8px; opacity: 0.8;">
+            <a href="books_ru.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+            <span style="color: #443322;">/</span>
+            <a href="books.html" style="color: #ffffff; text-decoration: none; border-bottom: 1px solid #C5A059;">EN</a>
+            <span style="color: #443322;">/</span>
+            <a href="books_de.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
         </div>
-    </header>
+    </div>
+</header>
+
+<div class="hero-section">
+    <img src="images/Logo-Ur-Origin.png" alt="UR — Return to Origin" class="logo-aura">
+    <h1>Books & Records</h1>
+</div>
 
     <section class="message-box">
         <h3 style="color: #666; font-size: 0.8rem; text-transform: uppercase;">The Message</h3>
