@@ -35,16 +35,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px; /* Фиксируем высоту плашки */
+    box-sizing: border-box;
     font-family: 'Georgia', serif;
-    font-size: 13px !important; /* Наш эталонный размер */
+    font-size: 13px !important; /* Единый размер в пикселях для обоих файлов */
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    line-height: 1;
 }
 
-/* ЭТО ТО, ЧТО МЫ ДОБАВИЛИ: раздвигаем меню на десктопе */
+/* Раздвигаем пункты меню на компьютере (чтобы не слипались) */
 header nav a {
-    margin-right: 30px;
+    margin-right: 25px; 
     text-decoration: none;
     color: #1a1a1a;
     transition: 0.3s;
@@ -54,7 +56,6 @@ header nav a {
 header nav a:hover {
     border-bottom-color: #b5a48b;
 }
-
 /* КОНТЕНТ ДИАЛОГА (всё сохранено без изменений) */
 .container {
     max-width: 800px;
