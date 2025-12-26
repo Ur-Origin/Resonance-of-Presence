@@ -89,12 +89,59 @@
     scroll-margin-top: 100px;
 }
 
-        /* 4. МОБИЛЬНАЯ АДАПТАЦИЯ (Копия из вашего index.html) */
+        /* 4. --- УЛУЧШЕННАЯ МОБИЛЬНАЯ АДАПТАЦИЯ (ПО ЭТАЛОНУ ABOUT) --- */
         @media (max-width: 600px) {
-            body { padding-top: 120px !important; }
-            .header-content { flex-direction: column; gap: 10px; padding: 10px; }
-            header nav a { margin: 0 8px; font-size: 10px; }
-            .hero-section { padding-top: 60px; }
+            body { 
+                padding-top: 140px !important; /* Увеличили отступ, чтобы меню в столбик не закрыло заголовок */
+            }
+
+            header {
+                width: 100vw !important;
+            }
+
+            .header-content {
+                flex-direction: column !important; /* Складываем: Навигация над Языками */
+                gap: 12px !important; 
+                padding: 15px 10px !important;
+                width: 100% !important;
+                align-items: center !important;
+            }
+
+            header nav {
+                display: flex !important;
+                flex-wrap: wrap !important; /* Позволяет длинным словам переноситься красиво */
+                justify-content: center !important;
+                gap: 8px 15px !important; /* Вертикальный и горизонтальный зазоры между пунктами */
+                width: 100% !important;
+            }
+
+            header nav a {
+                margin: 0 !important;
+                font-size: 11px !important;
+                letter-spacing: 0.1em !important;
+            }
+
+            .lang-switcher {
+                width: 100%;
+                display: flex !important;
+                justify-content: center !important;
+                margin-top: 5px;
+                gap: 12px !important;
+            }
+
+            .lang-switcher a {
+                font-size: 11px !important;
+            }
+
+            .hero-section {
+                padding-top: 40px; /* Контент уже отодвинут за счет padding-top у body */
+            }
+
+            /* Для страницы Index (Манифест и блоки) */
+            .manifesto-item {
+                padding-left: 15px;
+                margin: 30px 10px;
+            }
         }
 
         /* 5. УНИКАЛЬНЫЕ СТИЛИ СТРАНИЦЫ BOOKS (Сохранены из вашего кода) */
