@@ -23,10 +23,9 @@
             100% { opacity: 0.7; transform: scale(1); }
         }
 
-        /* Основные настройки */
         body {
             font-family: 'Georgia', serif;
-            background-color: #0F0700; /* Глубокий темный цвет Истока */
+            background-color: #0F0700;
             color: #d1d1d1;
             line-height: 1.8;
             max-width: 800px;
@@ -35,169 +34,85 @@
             text-align: center;
         }
 
-        /* Шапка и Лого */
-        header { margin-bottom: 40px; }
-        
-        .logo-aura {
-            max-width: 240px;
-            height: auto;
-            margin-bottom: 20px;
-            animation: pulse 5s infinite ease-in-out;
+        /* --- НОВОЕ ФИКСИРОВАННОЕ МЕНЮ (ЗОЛОТОЙ СТАНДАРТ) --- */
+        /* --- ИСПРАВЛЕННОЕ ФИКСИРОВАННОЕ МЕНЮ --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Заставляем меню игнорировать 800px у body и брать всю ширину окна */
+            z-index: 9999;
+            background-color: #0F0700;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            display: flex;
+            justify-content: center;
         }
 
-        h1 {
-            font-size: 1.8rem;
-            letter-spacing: 3px;
-            color: #ffffff;
-            font-weight: normal;
+        .header-content {
+            width: 100%;
+            max-width: 1000px; /* Ограничиваем контент внутри меню так же, как текст на странице */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            box-sizing: border-box; /* Чтобы padding не раздувал ширину */
             text-transform: uppercase;
-            margin-bottom: 10px;
+            font-size: 13px !important; /* Наш эталонный размер */
+            letter-spacing: 0.15em;
+            font-family: 'Georgia', serif;
         }
 
-        /* Навигация */
-        nav {
-            margin: 20px 0;
-            padding: 15px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #ccc;
+        header nav a {
+            margin-right: 25px !important; /* Эталонный отступ */
+            color: #d1d1d1 !important;
             text-decoration: none;
-            font-weight: normal;
-            letter-spacing: 1px;
-            transition: 0.3s;
         }
 
-        nav a:hover { color: #C5A059; }
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+        }
 
-        .lang-switch {
+        /* --- ЛОГОТИП (ТЕПЕРЬ НИЖЕ МЕНЮ) --- */
+        .hero-section {
+            padding-top: 100px; /* Отступ, чтобы не пряталось под меню */
             margin-bottom: 40px;
-            font-size: 0.8rem;
-            letter-spacing: 1px;
         }
 
-        .lang-switch a { color: #666; text-decoration: none; margin: 0 5px; transition: 0.3s; }
-        .lang-switch a.active { color: #fff; pointer-events: none; }
-        .lang-switch a:hover { color: #aaa; }
-
-        /* Общие текстовые блоки */
-        section, .content-block {
-            margin: 80px auto;
-            text-align: center;
+        /* МОБИЛЬНАЯ АДАПТАЦИЯ ДЛЯ ГЛАВНОЙ */
+        @media (max-width: 600px) {
+            body { padding-top: 120px !important; }
+            .header-content { flex-direction: column; gap: 10px; padding: 10px; }
+            header nav a { margin: 0 8px; font-size: 10px; }
+            .hero-section { padding-top: 60px; }
         }
 
-        h2, h3 {
-            color: #C5A059;
-            font-weight: normal;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-        }
-
+        section, .content-block { margin: 80px auto; text-align: center; }
+        h2, h3 { color: #C5A059; font-weight: normal; letter-spacing: 2px; margin-bottom: 30px; }
         p { margin-bottom: 25px; }
 
-        /* Специфические стили для Послания */
-        .message-box {
-            font-style: italic;
-            font-size: 1.15rem;
-            color: #b0b0b0;
-            line-height: 1.9;
-        }
+        .message-box { font-style: italic; font-size: 1.15rem; color: #b0b0b0; line-height: 1.9; }
 
-        /* Стили для Тизера Книги */
-        .book-teaser {
-            text-align: center;
-            max-width: 700px;
-            margin: 80px auto;
-        }
+        .book-teaser { text-align: center; max-width: 700px; margin: 80px auto; }
+        .fade-text { background: linear-gradient(to bottom, #d1d1d1 60%, #0F0700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 30px; }
 
-        .fade-text {
-            background: linear-gradient(to bottom, #d1d1d1 60%, #0F0700 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 30px;
-        }
+        .read-more-btn { display: inline-block; padding: 12px 35px; border: 1px solid #443322; color: #C5A059; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; transition: 0.3s; border-radius: 2px; }
+        .read-more-btn:hover { background: #C5A059; color: #0F0700; }
 
-        .read-more-btn {
-            display: inline-block;
-            padding: 12px 35px;
-            border: 1px solid #443322;
-            color: #C5A059;
-            text-decoration: none;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            transition: 0.3s;
-            border-radius: 2px;
-        }
+        .manifesto-item { margin: 40px auto; max-width: 600px; text-align: left; padding-left: 20px; border-left: 1px solid #443322; }
+        .manifesto-item strong { display: block; color: #fff; font-size: 1.1rem; margin-bottom: 10px; }
 
-        .read-more-btn:hover {
-            background: #C5A059;
-            color: #0F0700;
-        }
-
-        /* Манифест */
-        .manifesto-item {
-            margin: 40px auto;
-            max-width: 600px;
-            text-align: left;
-            padding-left: 20px;
-            border-left: 1px solid #443322;
-        }
-
-        .manifesto-item strong {
-            display: block;
-            color: #fff;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
-
-        /* Цитаты Голосов */
-        blockquote {
-            font-style: italic;
-            color: #aaa;
-            margin: 60px auto;
-            padding: 40px;
-            max-width: 600px;
-            border: 1px dashed rgba(240, 188, 60, 0.15);
-            background: rgba(255, 255, 255, 0.01);
-            text-align: left;
-            line-height: 1.6;
-        }
-
+        blockquote { font-style: italic; color: #aaa; margin: 60px auto; padding: 40px; max-width: 600px; border: 1px dashed rgba(240, 188, 60, 0.15); background: rgba(255, 255, 255, 0.01); text-align: left; line-height: 1.6; }
         blockquote strong { color: #C5A059; display: block; margin-top: 15px; text-align: right; font-style: normal; }
 
-        /* Разделители */
-        hr {
-            border: 0;
-            border-top: 1px solid #221105;
-            width: 100px;
-            margin: 80px auto;
-        }
+        hr { border: 0; border-top: 1px solid #221105; width: 100px; margin: 80px auto; }
 
-        /* Подвал */
-        footer {
-            margin-top: 100px;
-            padding-top: 40px;
-            border-top: 1px solid #221105;
-        }
-
-        .external-links a {
-            color: #666;
-            text-decoration: none;
-            font-size: 0.8rem;
-            margin: 0 15px;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
+        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #221105; }
+        .external-links a { color: #666; text-decoration: none; font-size: 0.8rem; margin: 0 15px; letter-spacing: 1px; transition: 0.3s; }
         .external-links a:hover { color: #C5A059; }
-
-        .copyright {
-            margin-top: 40px;
-            font-size: 0.7rem;
-            color: #444;
-            letter-spacing: 1px;
-        }
+        .copyright { margin-top: 40px; font-size: 0.7rem; color: #444; letter-spacing: 1px; }
     </style>
 </head>
 <body>
