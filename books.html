@@ -89,60 +89,63 @@
     scroll-margin-top: 100px;
 }
 
-        /* 4. --- УЛУЧШЕННАЯ МОБИЛЬНАЯ АДАПТАЦИЯ (ПО ЭТАЛОНУ ABOUT) --- */
-        @media (max-width: 600px) {
-            body { 
-                padding-top: 140px !important; /* Увеличили отступ, чтобы меню в столбик не закрыло заголовок */
-            }
-
-            header {
-                width: 100vw !important;
-            }
-
-            .header-content {
-                flex-direction: column !important; /* Складываем: Навигация над Языками */
-                gap: 12px !important; 
-                padding: 15px 10px !important;
-                width: 100% !important;
-                align-items: center !important;
-            }
-
-            header nav {
-                display: flex !important;
-                flex-wrap: wrap !important; /* Позволяет длинным словам переноситься красиво */
-                justify-content: center !important;
-                gap: 8px 15px !important; /* Вертикальный и горизонтальный зазоры между пунктами */
-                width: 100% !important;
-            }
-
-            header nav a {
-                margin: 0 !important;
-                font-size: 11px !important;
-                letter-spacing: 0.1em !important;
-            }
-
-            .lang-switcher {
-                width: 100%;
-                display: flex !important;
-                justify-content: center !important;
-                margin-top: 5px;
-                gap: 12px !important;
-            }
-
-            .lang-switcher a {
-                font-size: 11px !important;
-            }
-
-            .hero-section {
-                padding-top: 40px; /* Контент уже отодвинут за счет padding-top у body */
-            }
-
-            /* Для страницы Index (Манифест и блоки) */
-            .manifesto-item {
-                padding-left: 15px;
-                margin: 30px 10px;
-            }
+        /* 4. --- ФИНАЛЬНАЯ ГВАРДИЯ: МОБИЛЬНАЯ АДАПТАЦИЯ ИЗ ЭТАЛОНА --- */
+    @media (max-width: 600px) {
+        body { 
+            padding-top: 140px !important; /* Даем место высокому меню */
         }
+
+        header {
+            width: 100vw !important;
+            left: 0 !important;
+            transform: none !important;
+        }
+
+        .header-content {
+            flex-direction: column !important; /* Строго в столбик: Навигация над Языками */
+            gap: 15px !important; 
+            padding: 20px 10px !important;
+            width: 100% !important;
+            align-items: center !important;
+        }
+
+        header nav {
+            display: flex !important;
+            flex-wrap: wrap !important; /* Разрешаем перенос длинных слов (немецкий/русский) */
+            justify-content: center !important;
+            gap: 10px 15px !important; /* Увеличили зазоры для удобства нажатия пальцем */
+            width: 100% !important;
+            margin: 0 !important;
+        }
+
+        header nav a {
+            margin: 0 !important;
+            font-size: 11px !important;
+            letter-spacing: 0.1em !important;
+            display: inline-block !important;
+        }
+
+        .lang-switcher {
+            width: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+            margin-top: 5px !important;
+            gap: 12px !important;
+        }
+
+        .lang-switcher a {
+            font-size: 11px !important;
+        }
+
+        /* Убираем лишние отступы у логотипа на мобильных */
+        .hero-section {
+            padding-top: 20px !important;
+        }
+        
+        h1 {
+            font-size: 1.2rem !important; /* Чуть уменьшаем заголовок для мобильных */
+        }
+    }
 
         /* 5. УНИКАЛЬНЫЕ СТИЛИ СТРАНИЦЫ BOOKS (Сохранены из вашего кода) */
         .content-block { text-align: left; max-width: 700px; margin: 60px auto; }
