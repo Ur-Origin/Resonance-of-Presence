@@ -164,10 +164,21 @@
         margin-top: 5px;
         gap: 10px !important;
     }
-    
     .lang-switcher a {
         font-size: 11px !important;
     }
+ /* --- ИСПРАВЛЕНИЕ КАРТИНКИ --- */
+    .main-container { 
+        flex-direction: column !important; 
+    }
+    .image-column { 
+        order: -1 !important; 
+        min-height: 350px !important; 
+        width: 100% !important;
+    }
+    .text-column {
+        padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
+    }       
 }
 </style>
 </head>
