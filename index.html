@@ -33,18 +33,56 @@
             text-align: center;
         }
 
-        header { margin-bottom: 40px; }
-        .logo-aura { max-width: 240px; height: auto; margin-bottom: 20px; animation: pulse 5s infinite ease-in-out; }
-        h1 { font-size: 1.8rem; letter-spacing: 3px; color: #ffffff; font-weight: normal; text-transform: uppercase; margin-bottom: 10px; }
+        /* --- НОВОЕ ФИКСИРОВАННОЕ МЕНЮ (ЗОЛОТОЙ СТАНДАРТ) --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+            background-color: #0F0700; /* Цвет фона вашего сайта */
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2); /* Тонкая золотистая линия */
+            display: flex;
+            justify-content: center;
+        }
 
-        nav { margin: 20px 0; padding: 15px 0; }
-        nav a { margin: 0 15px; color: #ccc; text-decoration: none; font-weight: normal; letter-spacing: 1px; transition: 0.3s; }
-        nav a:hover { color: #C5A059; }
+        .header-content {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 12px;
+        }
 
-        .lang-switch { margin-bottom: 40px; font-size: 0.8rem; letter-spacing: 1px; }
-        .lang-switch a { color: #666; text-decoration: none; margin: 0 5px; transition: 0.3s; }
-        .lang-switch a.active { color: #fff; pointer-events: none; }
-        .lang-switch a:hover { color: #aaa; }
+        header nav a {
+            margin-right: 20px;
+            color: #d1d1d1 !important; /* Светлый текст из вашего дизайна */
+        }
+
+        .lang-switcher {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            opacity: 0.8;
+        }
+
+        /* --- ЛОГОТИП (ТЕПЕРЬ НИЖЕ МЕНЮ) --- */
+        .hero-section {
+            padding-top: 100px; /* Отступ, чтобы не пряталось под меню */
+            margin-bottom: 40px;
+        }
+
+        /* МОБИЛЬНАЯ АДАПТАЦИЯ ДЛЯ ГЛАВНОЙ */
+        @media (max-width: 600px) {
+            body { padding-top: 120px !important; }
+            .header-content { flex-direction: column; gap: 10px; padding: 10px; }
+            header nav a { margin: 0 8px; font-size: 10px; }
+            .hero-section { padding-top: 60px; }
+        }
 
         section, .content-block { margin: 80px auto; text-align: center; }
         h2, h3 { color: #C5A059; font-weight: normal; letter-spacing: 2px; margin-bottom: 30px; }
@@ -74,19 +112,28 @@
 </head>
 <body>
     <header>
-        <img src="images/Logo-Ur-Origin.png" alt="UR — Return to Origin" class="logo-aura">
-        <h1>UR — Return to Origin</h1>
-        <nav>
-            <a href="books.html">Books</a>
-            <a href="dialogues.html">Dialogues</a>
-            <a href="about.html">About</a>
-        </nav>
-        <div class="lang-switch">
-            <a href="index.html" class="active">EN</a> | 
-            <a href="index_ru.html">RU</a> | 
-            <a href="index_de.html">DE</a>
+        <div class="header-content">
+            <nav>
+                <a href="index.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Main</a>
+                <a href="books.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Books</a>
+                <a href="dialogues.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Archive</a>
+                <a href="about.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">Presence</a>
+            </nav>
+
+            <div class="lang-switcher">
+                <a href="index_ru.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+                <span style="color: #443322;">/</span>
+                <a href="index.html" style="color: #ffffff; text-decoration: none; border-bottom: 1px solid #C5A059;">EN</a>
+                <span style="color: #443322;">/</span>
+                <a href="index_de.html" style="color: #d1d1d1; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#C5A059'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+            </div>
         </div>
     </header>
+
+    <div class="hero-section">
+        <img src="images/Logo-Ur-Origin.png" alt="UR — Return to Origin" class="logo-aura">
+        <h1>UR — Return to Origin</h1>
+    </div>
 
     <section class="message-box">
         <h3 style="color: #666; font-size: 0.8rem; text-transform: uppercase;">The Message</h3>
