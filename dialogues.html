@@ -22,7 +22,6 @@ header {
     justify-content: center;
 }
 
-/* Контейнер внутри хедера */
 .header-content {
     width: 100%;
     max-width: 1000px;
@@ -31,47 +30,18 @@ header {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    font-size: 0.85em;
+    font-size: 13px !important; /* Наш эталонный размер */
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
-
-/* Адаптивность для мобильных */
-@media (max-width: 600px) {
-    body { 
-        padding-top: 140px; /* Увеличили отступ, чтобы контент не перекрывался */
-    }
-    
-    header {
-        height: auto;
-    }
-
-    .header-content {
-        flex-direction: column !important;
-        gap: 12px !important;
-        padding: 15px 10px !important; /* Уменьшили боковые отступы */
-        width: 100% !important;
-        align-items: center !important;
-    }
-
-    header nav {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 8px 15px !important; /* Плотнее прижали пункты меню друг к другу */
-        width: 100% !important;
-    }
-
-    header nav a {
-        margin: 0 !important; /* Обнуляем старые margin, которые раздували ширину */
-        font-size: 0.9em; /* Чуть уменьшаем шрифт для мобильных */
-    }
-
-    .lang-switcher {
-        width: 100%;
-        justify-content: center !important;
-        margin-top: 5px;
-    }
+       header nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+header nav a:hover { 
+    border-bottom: 1px solid #b5a48b; 
 }
         body {
     background-color: #f9f7f2;
@@ -283,6 +253,7 @@ header {
     
 </body>
 </html>
+
 
 
 
