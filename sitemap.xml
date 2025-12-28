@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ur-origin.net/</loc>
+    <loc>https://ur-origin.net</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/index_ru.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/index_de.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net"/>
     <priority>1.0</priority>
   </url>
 
