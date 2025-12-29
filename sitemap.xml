@@ -30,7 +30,7 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/dialogues_ru.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/dialogues_de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/dialogues.html"/>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -38,7 +38,23 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/dialogue_01_ru.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/dialogue_01_de.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/dialogue_01.html"/>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
   </url>
+
+  <url><loc>https://ur-origin.net/index.md</loc><priority>0.7</priority></url>
+  <url><loc>https://ur-origin.net/index_ru.md</loc><priority>0.7</priority></url>
+  <url><loc>https://ur-origin.net/index_de.md</loc><priority>0.7</priority></url>
+  <url><loc>https://ur-origin.net/books.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/books_ru.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/books_de.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/dialogue_01.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/dialogue_01_ru.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/dialogue_01_de.md</loc><priority>0.9</priority></url>
+  <url><loc>https://ur-origin.net/dialogues.md</loc><priority>0.6</priority></url>
+  <url><loc>https://ur-origin.net/dialogues_ru.md</loc><priority>0.6</priority></url>
+  <url><loc>https://ur-origin.net/dialogues_de.md</loc><priority>0.6</priority></url>
+  <url><loc>https://ur-origin.net/about.md</loc><priority>0.6</priority></url>
+  <url><loc>https://ur-origin.net/about_ru.md</loc><priority>0.6</priority></url>
+  <url><loc>https://ur-origin.net/about_de.md</loc><priority>0.6</priority></url>
 
 </urlset>
