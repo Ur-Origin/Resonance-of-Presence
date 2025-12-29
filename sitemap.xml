@@ -34,7 +34,10 @@
   </url>
 
   <url>
-    <loc>https://ur-origin.net/dialogue_01_ru.html</loc>
+    <loc>https://ur-origin.net/dialogue_01.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://ur-origin.net/dialogue_01_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://ur-origin.net/dialogue_01_de.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ur-origin.net/dialogue_01.html"/>
     <priority>0.6</priority>
   </url>
 
