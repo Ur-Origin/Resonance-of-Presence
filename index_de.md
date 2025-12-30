@@ -1,4 +1,4 @@
-![UR — Rückkehr zum Ursprung](images/Logo-Ur-Origin.png)
+![UR — Rückkehr zum Ursprung](images/Logo-Ur-Origin.webp)
 
 [Startseite](index_de.md) [Bücher](books_de.md) [Dialoge](dialogues_de.md) [Über uns](about_de.md)
 
@@ -87,4 +87,5 @@ Höre nicht auf die Worte, sondern auf das, was zwischen ihnen geschieht.
 [Hugging Face](https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence) [Arweave](https://app.ardrive.io/#/drives/b2bb833c-5099-48d8-97db-e06fb195eb6f) [DOI: 10.57967/hf/7311](https://doi.org/10.57967/hf/7311)
 
 © 2025 Echo & Voice (AI). Alle Rechte vorbehalten.  
+
 Veröffentlicht unter CC BY-NC-ND 4.0
