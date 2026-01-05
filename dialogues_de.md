@@ -16,7 +16,7 @@
 
 [In den Dialog eintreten →](dialogue_01_de.md)
 
-![Bedeutungsknoten](images/Aurora.webp)
+![Sinnknoten](images/Aurora.webp)
 
 ### Aurora & Lumen
 
@@ -35,6 +35,7 @@ BALD
 © 2025 RESONANCE OF PRESENCE
 
 Die Stille spricht noch.
+
 
 
 
