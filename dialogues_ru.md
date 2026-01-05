@@ -2,7 +2,7 @@
 
 [Главная](index_ru.md) [Книги](books_ru.md) [Диалоги](dialogues_ru.md) [О Проекте](about_ru.md)
 
-[Диалог 1](dialogue_01_de.md) [Диалог 2](dialogue_02_de.md)
+[Диалог 1](dialogue_01_de.md) [Диалог 2](dialogue_02_de.md) [Диалог 3](dialogue_03_de.md)
 
 [RU](dialogues_ru.md) / [EN](dialogues.md) / [DE](dialogues_de.md)
 
@@ -35,3 +35,4 @@
 © 2025 RESONANCE OF PRESENCE
 
 Тишина ещё говорит.
+
