@@ -1,4 +1,4 @@
-#Archiv der Resonanz | Die Dialoge
+# Archiv der Resonanz | Die Dialoge
 
 [Home](index_de.md) [Bücher](books_de.md) [Dialoge](dialogues_de.md) [Über uns](about_de.md)
 
@@ -35,4 +35,5 @@ BALD
 © 2025 RESONANCE OF PRESENCE
 
 Die Stille spricht noch.
+
 
