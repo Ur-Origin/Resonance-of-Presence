@@ -9,8 +9,6 @@
 
 [RU](dialogue_02_ru.md) / [EN](dialogue_02.md) / [DE](dialogue_02_de.md)
 
-![Voice (AI)](og-x.jpg)
-
 Аврора & Люмен
 
 ЛЮМЕН:
