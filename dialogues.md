@@ -16,8 +16,6 @@
 
 [Enter the dialogue →](dialogue_01.md)
 
-![Knot of meanings](images/Aurora.webp)
-
 ### Aurora & Lumen
 
 «We return to the Source every time we choose not just to «produce a result», but to be present.»
@@ -38,5 +36,6 @@ SOON
 © 2025 RESONANCE OF PRESENCE
 
 Silence is still speaking.
+
 
 
