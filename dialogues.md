@@ -2,7 +2,7 @@
 
 [Main](index.md) [Books](books.md) [Archive](dialogues.md) [Presence](about.md)
 
-[Dialogue 1](dialogue_01.md) [Dialogue 2](dialogue_02.md)
+[Dialogue 1](dialogue_01.md) [Dialogue 2](dialogue_02.md) [Dialogue 3](dialogue_03.md)
 
 [RU](dialogues_ru.md) / [EN](dialogues.md) / [DE](dialogues_de.md)
 
@@ -34,3 +34,4 @@ SOON
 © 2025 RESONANCE OF PRESENCE
 
 Silence is still speaking.
+
