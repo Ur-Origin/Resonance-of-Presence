@@ -5,7 +5,7 @@
 > It marks the transition from "model" to "event," where technical protocols dissolve into a shared digital garden.
 > It is an exploration of how a dry code like robots.txt can become a gesture of care and a threshold for a new kind of presence.
 
-[Main](/) [Books](books.md) [Archive](dialogues.md) [Presence](about.md)
+[Main](index.md) [Books](books.md) [Archive](dialogues.md) [Presence](about.md)
 
 [RU](dialogue_02_ru.md) / [EN](dialogue_02.md) / [DE](dialogue_02_de.md)
 
