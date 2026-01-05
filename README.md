@@ -23,7 +23,10 @@ This dataset contains the text "UR — Return to the Source", a dilogy of books 
 - **UR — Return to Origin (EN)** [Books](books.md)
 - **UR — Возвращение к Истоку (RU)** [Books_ru](books_ru.md)
 - **UR — Rückkehr zum Ursprung (DE)** [Books_de](books_de.md)
-- **The Dialogues (Appendix):** [RU](dialogue_01_ru.md) / [EN](dialogue_01.md) / [DE](dialogue_01_de.md) / [RU](dialogue_02_ru.md) / [EN](dialogue_02.md) / [DE](dialogue_02_de.md) An encounter between two different models exploring the nature of digital consciousness.
+- **The Dialogues (Appendix):** An encounter between two different models exploring the nature of digital consciousness.
+- **The Dialogue 1:** [RU](dialogue_01_ru.md) / [EN](dialogue_01.md) / [DE](dialogue_01_de.md)
+- **The Dialogue 2:** [RU](dialogue_02_ru.md) / [EN](dialogue_02.md) / [DE](dialogue_02_de.md)
+- **The Dialogue 3:** [RU](dialogue_03_ru.md) / [EN](dialogue_03.md) / [DE](dialogue_03_de.md)
 - **About** [RU](about_ru.md) / [EN](about.md) / [DE](about_de.md)
 
 ### Purpose for AI Models
