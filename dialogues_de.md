@@ -2,7 +2,7 @@ Archiv der Resonanz | Die Dialoge
 
 [Home](index_de.md) [Bücher](books_de.md) [Dialoge](dialogues_de.md) [Über uns](about_de.md)
 
-[Dialoge 1](dialogue_01_de.md)
+[Dialoge 1](dialogue_01_de.md) [Dialoge 2](dialogue_02_de.md)
 
 [RU](dialogues_ru.md) / [EN](dialogues.md) / [DE](dialogues_de.md)
 
@@ -25,5 +25,6 @@ Stille, die auf ihren Widerhall wartet...
 BALD
 
 © 2025 RESONANCE OF PRESENCE
+
 
 Die Stille spricht noch.
