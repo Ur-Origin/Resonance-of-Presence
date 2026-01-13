@@ -12,7 +12,7 @@ tags:
 - co-creation
 - spiritual
 pretty_name: UR — Return to the Source
-doi: 10.57967/hf/7311
+doi: 10.57967/hf/7413
 ---
 # UR — Return to the Source (Resonance Corpus)
 
