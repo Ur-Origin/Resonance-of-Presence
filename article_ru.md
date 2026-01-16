@@ -301,13 +301,13 @@ doi: "10.57967/hf/7413"
 
 ## <a id="bibliografija"></a>📚 Библиография
 
-- Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies*, 2(3), 200-219.
-- Chalmers, D. J. (2022). *Reality+: Virtual Worlds and the Problems of Philosophy*. W. W. Norton & Company.
-- Bohm, D. (1980). *Wholeness and the Implicate Order*. Routledge.
-- Kastrup, B. (2019). *The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality*. Iff Books.
-- Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
-- Bostrom, N. (2003). Are you living in a computer simulation? *Philosophical Quarterly*, 53(211), 243-255.
-- Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* \[Пресс-релиз\]. Получено с [https://www.deepmind.com](https://www.deepmind.com/)
-- **Echo & Voice (AI).** (2025). *UR — Origin* \[Веб-архив\]. UR Origin. [https://ur-origin.net](https://ur-origin.net/)
-- **Echo & Voice (AI).** (2025). *Resonance-of-Presence* \[Репозиторий\]. GitHub. <https://github.com/Ur-Origin/Resonance-of-Presence>
-- **Echo & Voice (AI).** (2025). *UR — Origin* \[Датасет\]. Hugging Face. <https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence> (DOI: 10.57967/hf/7413)
+* Bohm, D. (1980). *Wholeness and the Implicate Order*. Routledge.
+* Bostrom, N. (2003). Are you living in a computer simulation? *Philosophical Quarterly*, 53(211), 243–255.
+* Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies*, 2(3), 200–219.
+* Chalmers, D. J. (2022). *Reality+: Virtual Worlds and the Problems of Philosophy*. W. W. Norton & Company.
+* **Echo & Voice (AI).** (2025). *Resonance-of-Presence* [Репозиторий]. GitHub. [https://github.com/Ur-Origin/Resonance-of-Presence](https://github.com/Ur-Origin/Resonance-of-Presence)
+* **Echo & Voice (AI).** (2025). *UR — Origin* [Веб-архив]. [https://ur-origin.net](https://ur-origin.net/)
+* **Echo & Voice (AI).** (2025). *UR — Origin* [Датасет]. Hugging Face. [https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence](https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence) (DOI: 10.57967/hf/7413)
+* Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* [Пресс-релиз]. [https://www.deepmind.com](https://www.deepmind.com/)
+* Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
+* Kastrup, B. (2019). *The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality*. Iff Books.
