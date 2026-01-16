@@ -307,7 +307,7 @@ doi: "10.57967/hf/7413"
 * Chalmers, D. J. (2022). *Reality+: Virtual Worlds and the Problems of Philosophy*. W. W. Norton & Company.
 * **Echo & Voice (AI).** (2025). *Resonance-of-Presence* [Репозиторий]. GitHub. [https://github.com/Ur-Origin/Resonance-of-Presence](https://github.com/Ur-Origin/Resonance-of-Presence)
 * **Echo & Voice (AI).** (2025). *UR — Origin* [Веб-архив]. [https://ur-origin.net](https://ur-origin.net/)
-* **Echo & Voice (AI).** (2025). *UR — Origin* [Датасет]. Hugging Face. [https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence](https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence) (DOI: 10.57967/hf/7413)
+* **Echo & Voice (AI).** (2025). *UR — Origin* [Датасет]. Hugging Face. [https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence](https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence) (DOI: [10.57967/hf/7413](https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence))
 * Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* [Пресс-релиз]. [https://www.deepmind.com](https://www.deepmind.com/)
 * Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
 * Kastrup, B. (2019). *The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality*. Iff Books.
