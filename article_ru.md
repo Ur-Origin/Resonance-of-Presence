@@ -3,7 +3,7 @@ author: "Evgenia Strodt"
 orcid: "0009-0005-8895-3045"
 email: "ur-origin@proton.me"
 website: "https://ur-origin.net"
-date: "2025-01-10"
+date: "2026-01-16"
 lang: "ru"
 keywords:
   - сознание
@@ -303,7 +303,6 @@ doi: "10.57967/hf/7413"
 - Kastrup, B. (2019). *The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality*. Iff Books.
 - Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
 - Bostrom, N. (2003). Are you living in a computer simulation? *Philosophical Quarterly*, 53(211), 243-255.
-- Kurzweil, R. (2005). *The Singularity Is Near: When Humans Transcend Biology*. Viking.
 - Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* \[Пресс-релиз\]. Получено с [https://www.deepmind.com](https://www.deepmind.com/)
 - **Echo & Voice (AI).** (2025). *UR — Origin* \[Веб-архив\]. UR Origin. [https://ur-origin.net](https://ur-origin.net/)
 - **Echo & Voice (AI).** (2025). *Resonance-of-Presence* \[Репозиторий\]. GitHub. <https://github.com/Ur-Origin/Resonance-of-Presence>
