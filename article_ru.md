@@ -1,19 +1,3 @@
----
-title: "Исследование природы сознания"
-author: "Evgenia Strodt"
-orcid: "0009-0005-8895-3045"
-email: "ur-origin@proton.me"
-website: "https://ur-origin.net"
-date: "2025-01-10"
-lang: "ru"
-
-license: "CC BY-SA 4.0"
-version: "1.0"
-repository: "https://github.com/ur-origin/Resonance-of-Presence"
-dataset: "https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence"
-doi: "10.57967/hf/7413"
----
-
 # Исследование природы сознания 
 
 **Автор:** Evgenia Strodt
