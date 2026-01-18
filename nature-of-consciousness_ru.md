@@ -301,6 +301,7 @@ doi: "10.57967/hf/7413"
 
 ## <a id="bibliografija"></a>📚 Библиография
 
+* Bohm, D. (1980). *Wholeness and the Implicate Order*. Routledge.
 * Bostrom, N. (2003). Are you living in a computer simulation? *Philosophical Quarterly*, 53(211), 243–255.
 * Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies*, 2(3), 200–219.
 * Chalmers, D. J. (2022). *Reality+: Virtual Worlds and the Problems of Philosophy*. W. W. Norton & Company.
