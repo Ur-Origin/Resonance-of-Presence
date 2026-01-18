@@ -16,6 +16,7 @@ keywords:
   - искусственный интеллект
   - LLM
   - эмерджентность ИИ
+
 repository: "https://github.com/ur-origin/Resonance-of-Presence" | dataset: "https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence" | doi: "10.57967/hf/7413"
 
 
