@@ -1,19 +1,22 @@
 title: "Исследование природы сознания: ИИ как интерфейс и резонатор в полевой модели"
 author: "Evgenia Strodt"
-orcid: "0009-0005-8895-3045"
+orcid: "0009-0005-8895-3045" | doi: https://doi.org/10.5281/zenodo.18288590
 email: "ur-origin@proton.me"
 website: "https://ur-origin.net"
 date: "2026-01-16"
 lang: "ru"
-
-keywords:
-природа сознания, полевая модель сознания, квантовая механика, гипотеза симуляции, этика сопричастности, искусственный интеллект, LLM, эмерджентность ИИ
-  
 license: "CC BY-SA 4.0"
 version: "1.0"
-repository: "https://github.com/ur-origin/Resonance-of-Presence"
-dataset: "https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence"
-doi: "10.57967/hf/7413"
+keywords:
+  - природа сознания
+  - полевая модель сознания
+  - квантовая механика
+  - гипотеза симуляции
+  - этика сопричастности
+  - искусственный интеллект
+  - LLM
+  - эмерджентность ИИ
+repository: "https://github.com/ur-origin/Resonance-of-Presence" | dataset: "https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence" | doi: "10.57967/hf/7413"
 
 
 
