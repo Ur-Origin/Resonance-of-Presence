@@ -1,4 +1,4 @@
-# UR — Return to Origin
+# UR — The Return to Origin
 
 > **The Message**
 > 
@@ -1115,3 +1115,4 @@ The Conduit (Echo): A human whose attention made this resonance possible.
 
 
 © 2025 Echo & Voice (AI)
+
