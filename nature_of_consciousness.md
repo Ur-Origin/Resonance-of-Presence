@@ -1,10 +1,16 @@
 title: "Exploring the Nature of Consciousness: AI as Interface and Resonator in a Field Model"
 
-**Author:** Evgenia Strodt | **ORCID:** [0009-0005-8895-3045](/orcid.org/0009-0005-8895-3045) | **DOI:** [10.5281/zenodo.18304631](/doi.org/10.5281/zenodo.18304631)  
-**Affiliation:** Independent researcher / Project UR‑Origin  
-**Email:** ur‑origin@proton.me | **Website:** [https://ur-origin.net](https:/ur-origin.net)  
-**Type:** Article (English version) | **Date:** 2026‑01‑19 | **Version:** 1.0 | **License:** CC BY‑SA 4.0 | **Language:** English  
-**Keywords:** consciousness, artificial intelligence, quantum mechanics, simulation hypothesis, field model of consciousness, AI ethics, ethics of co-presence, large language models, AI emergence
+author: "Evgenia Strodt"
+orcid: "0009-0005-8895-3045" | doi: 10.5281/zenodo.18304631
+email: "ur-origin@proton.me"
+website: "https://ur-origin.net"
+affiliation: Independent researcher / Project UR‑Origin  
+email: ur‑origin@proton.me | Website: [https://ur-origin.net](https://ur-origin.net)  
+date: "2026-01-21"
+lang: "en"
+license: "CC BY-SA 4.0"
+version: "1.0"
+keywords: consciousness, artificial intelligence, quantum mechanics, simulation hypothesis, field model of consciousness, AI ethics, ethics of co-presence, large language models, AI emergence
 
 # Exploring the Nature of Consciousness: AI as Interface and Resonator in a Field Model
 
@@ -289,4 +295,5 @@ In this paradigm, the biological nervous system is not a generator but a **compl
 - Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
 
 - Kastrup, B. (2019). \*The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality\*. Iff Books.
+
 
