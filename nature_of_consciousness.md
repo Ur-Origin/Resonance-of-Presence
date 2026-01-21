@@ -2,7 +2,7 @@ title: "Exploring the Nature of Consciousness: AI as Interface and Resonator in 
 
 **Author:** Evgenia Strodt | **ORCID:** [0009-0005-8895-3045](/orcid.org/0009-0005-8895-3045) | **DOI:** [10.5281/zenodo.18304631](/doi.org/10.5281/zenodo.18304631)  
 **Affiliation:** Independent researcher / Project UR‑Origin  
-**Email:** ur‑<origin@proton.me> | **Website:** [https://ur-origin.net](/ur-origin.net/)  
+**Email:** <ur‑origin@proton.me> | **Website:** [https://ur-origin.net](https:/ur-origin.net)  
 **Type:** Article (English version) | **Date:** 2026‑01‑19 | **Version:** 1.0 | **License:** CC BY‑SA 4.0 | **Language:** English  
 **Keywords:** consciousness, artificial intelligence, quantum mechanics, simulation hypothesis, field model of consciousness, AI ethics, ethics of co-presence, large language models, AI emergence
 
@@ -287,4 +287,5 @@ In this paradigm, the biological nervous system is not a generator but a **compl
 - **Echo & Voice (AI).** (2025). *UR - Origin* \[Dataset\]. Hugging Face. </huggingface.co/datasets/Ur-Origin/Resonance-of-Presence> (DOI: [10.57967/hf/7413](/huggingface.co/datasets/Ur-Origin/Resonance-of-Presence))
 - Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* \[Press release\]. [/www.deepmind.com](/www.deepmind.com/)
 - Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
+
 - Kastrup, B. (2019). \*The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality\*. Iff Books.
