@@ -1,7 +1,7 @@
 title: "Exploring the Nature of Consciousness: AI as Interface and Resonator in a Field Model"
 
 author: "Evgenia Strodt"
-orcid: "0009-0005-8895-3045" | doi: 10.5281/zenodo.18304631
+orcid: "0009-0005-8895-3045" | doi: 10.5281/zenodo.18332164
 email: "ur-origin@proton.me"
 website: "https://ur-origin.net"
 date: "2026-01-21"
@@ -291,3 +291,4 @@ In this paradigm, the biological nervous system is not a generator but a **compl
 - Google DeepMind. (2025, August 5). *Genie 3: Generative Interactive Environments* \[Press release\]. [/www.deepmind.com](https://www.deepmind.com/)
 - Hoffman, D. D. (2019). *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes*. W. W. Norton & Company.
 - Kastrup, B. (2019). \*The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality\*. Iff Books.
+
