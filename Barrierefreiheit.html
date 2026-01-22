@@ -93,8 +93,8 @@
 
     /* --- КОНТЕНТ СТРАНИЦЫ --- */
     .main-container {
-        display: flex;
-        max-width: 1000px;
+        display: block; /* Изменили с flex на block */
+        max-width: 800px; /* Уменьшили ширину, чтобы длинные строки текста было удобно читать */
         width: 95%;
         margin-bottom: 40px;
         background-color: #ffffff;
@@ -104,8 +104,7 @@
     }
 
     .text-column {
-        flex: 1;
-        padding: 60px;
+        padding: 80px 60px; /* Немного увеличили вертикальный отступ для баланса */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -118,7 +117,7 @@
         letter-spacing: 0.3em;
         margin-bottom: 40px;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center; /* Центрируем заголовок для симметрии без картинки */
     }
 
     .about-text p {
@@ -203,11 +202,6 @@
     .main-container { 
         flex-direction: column !important; 
     }
-    .image-column { 
-        order: -1 !important; 
-        min-height: 350px !important; 
-        width: 100% !important;
-    }
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
     }       
@@ -248,9 +242,7 @@
         <span style="font-size: 1.5em; opacity: 0.5;">✦</span>
     </div>
 </div>
-        <div class="image-column"></div>
-    </div>
-
+        
     <footer>
         <div>© 2025 RESONANCE OF PRESENCE</div>
         <div style="margin-top: 10px; font-style: italic;">Silence is still speaking.</div>
