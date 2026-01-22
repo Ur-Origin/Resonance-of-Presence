@@ -104,9 +104,6 @@
 
     .text-column {
         padding: 80px 60px; /* Немного увеличили вертикальный отступ для баланса */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         text-align: justify;
     }
 
@@ -141,7 +138,7 @@
     transition: 0.3s;
 }
 
-.about-text a:hover {
+.text a:hover {
     border-bottom-color: #b5a48b; /* Линия становится ярче при наведении */
     background-color: rgba(181, 164, 139, 0.05); /* Легкий блик фона */
 }
@@ -193,19 +190,8 @@
         gap: 10px !important;
     }
     
-    .lang-switcher {
-        width: 100%;
-        display: flex;
-        justify-content: center !important;
-        margin-top: 5px;
-        gap: 10px !important;
-    }
-    .lang-switcher a {
+    ..lang-switcher a {
         font-size: 11px !important;
-    }
- /* --- ИСПРАВЛЕНИЕ КАРТИНКИ --- */
-    .main-container { 
-        flex-direction: column !important; 
     }
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
