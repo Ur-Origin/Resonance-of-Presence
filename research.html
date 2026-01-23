@@ -245,6 +245,32 @@
         color: #C5A059;
         margin-top: 40px;
     }
+       
+   h2, h3 {
+    scroll-margin-top: 100px; /* Высота твоего меню + небольшой запас */
+}
+
+/* Ссылки в оглавлении (список ul в начале) */
+.text-column ul li a {
+    color: #555; /* Мягкий серый, чтобы не отвлекать */
+    border-bottom: 1px solid transparent;
+}
+
+.text-column ul li a:hover {
+    color: #C5A059; /* Золото при наведении */
+    border-bottom-color: #C5A059;
+}
+
+/* Ссылки в основном тексте */
+.text-column p a {
+    color: #1a1a1a; /* Черный, как основной текст */
+    border-bottom: 1px solid rgba(197, 160, 89, 0.5); /* Тонкая золотая нить */
+    font-weight: 500;
+}
+
+.text-column p a:hover {
+    background-color: rgba(197, 160, 89, 0.1); /* Легкий эффект подсветки */
+}
 </style>
 </head>
 <body>
