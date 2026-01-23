@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <link rel="canonical" href="https://ur-origin.net/privacy_de.html.html" />
+   <link rel="alternate" hreflang="ru" href="https://ur-origin.net/privacy_ru.html" />
+<link rel="alternate" hreflang="en" href="https://ur-origin.net/privacy.html" />
+<link rel="alternate" hreflang="de" href="https://ur-origin.net/privacy_de.html" />
+<link rel="alternate" hreflang="x-default" href="https://ur-origin.net/privacy.html" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Datenschutzerklärung des UR-Projekts.">
+    
+   <meta property="og:type" content="website">
+<meta property="og:url" content="https://ur-origin.net/privacy_de.html">
+<meta property="og:title" content="Datenschutzerklärung | UR Project">
+<meta property="og:description" content="Datenschutzerklärung des UR-Projekts.">
+<meta property="og:image" content="https://ur-origin.net/og-card.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Datenschutzerklärung | UR Project">
+<meta name="twitter:description" content="Datenschutzerklärung des UR-Projekts.">
+<meta name="twitter:image" content="https://ur-origin.net/og-x.jpg">
+   
+    <title>Datenschutzerklärung | UR Project</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #f9f7f2;
+        color: #1a1a1a;
+        font-family: 'Georgia', serif;
+        line-height: 1.8;
+        margin: 0;
+        padding-top: 150px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* --- ЭТАЛОННОЕ МЕНЮ (СИНХРОНИЗИРОВАНО) --- */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: rgba(244, 241, 234, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(181, 164, 139, 0.1);
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-content {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px; /* Фиксированный отступ как в диалогах */
+        font-size: 13px !important; /* Наш эталонный размер */
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    header nav a {
+        color: #1a1a1a;
+        text-decoration: none;
+        margin-right: 25px; /* Раздвигаем пункты меню на десктопе */
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+        font-family: 'Georgia', serif;
+    }
+
+    header nav a:hover { 
+        border-bottom-color: #b5a48b; 
+    }
+
+    .lang-switcher a {
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    /* --- КОНТЕНТ СТРАНИЦЫ --- */
+    .main-container {
+        display: flex;
+        max-width: 1000px;
+        width: 95%;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .text-column {
+        flex: 1;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .text-column h1 {
+        font-weight: normal;
+        font-size: 1.1em;
+        letter-spacing: 0.25em;
+        color: #C5A059;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+   .text p {
+        margin-bottom: 25px;
+        font-size: 0.95em;
+        color: #333;
+    }
+
+   .signature {
+        margin-top: 40px;
+        font-style: italic;
+        color: #b5a48b;
+        text-align: left;
+    }
+
+   /* Общий стиль для всех ссылок внутри текста */
+.text a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181, 164, 139, 0.4); /* Мягкая линия вместо грубого подчеркивания */
+    transition: 0.3s;
+}
+
+.text a:hover {
+    border-bottom-color: #b5a48b; /* Линия становится ярче при наведении */
+    background-color: rgba(181, 164, 139, 0.05); /* Легкий блик фона */
+}
+
+    footer {
+        width: 100%;
+        margin-top: 80px;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        color: #b5a48b;
+        opacity: 0.7;
+    }
+
+   /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
+    @media (max-width: 600px) {
+    body { 
+        padding-top: 140px !important; /* Единый отступ сверху для контента */
+    }
+
+    .header-content {
+        flex-direction: column !important; /* Складываем меню в столбик */
+        gap: 12px !important; /* Расстояние между названием и кнопками */
+        padding: 15px 10px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        width: 100% !important;
+    }
+
+    header nav a {
+        margin: 0 !important;
+        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        letter-spacing: 0.1em !important;
+    }
+
+    .lang-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        margin-top: 5px;
+        gap: 10px !important;
+    }
+    
+    ..lang-switcher a {
+        font-size: 11px !important;
+    }
+    .text-column {
+        padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
+    }       
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <nav>
+            <a href="index_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Startseite</a>
+            <a href="books_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Bücher</a>
+            <a href="dialogues_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Dialoge</a>
+            <a href="about_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">Über uns</a>
+        </nav>
+
+        <div class="lang-switcher" style="opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+            <a href="privacy_ru.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">RU</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="privacy.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">EN</a>
+            <span style="color: #b5a48b;">/</span>
+            <a href="privacy_de.html" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;" onmouseover="this.style.borderBottomColor='#b5a48b'" onmouseout="this.style.borderBottomColor='transparent'">DE</a>
+        </div>
+    </div>
+</header>
+
+    <div class="main-container">
+        <div class="text-column">
+    <h1>Datenschutzerklärung</h1>
+<div class="text">
+    <p><strong>1. Allgemeine Informationen</strong><br>
+    Der Schutz Ihrer Privatsphäre hat für dieses Projekt höchste Priorität. Diese Webseite dient ausschließlich Informationszwecken. Es werden keine Nutzerprofile erstellt und keine Tracking-Cookies oder Werbetools verwendet.</p>
+
+    <p><strong>2. Datenerfassung durch den Hosting-Anbieter (GitHub Pages)</strong><br>
+    Diese Webseite wird über GitHub Pages (GitHub Inc., USA) gehostet. Beim Besuch der Seite erfasst GitHub automatisch technische Daten, die von Ihrem Browser übermittelt werden (Server-Logfiles). Dazu gehören: IP-Adresse, Datum und Uhrzeit der Anfrage, Browsertyp und Betriebssystem. Diese Daten sind technisch notwendig für den Betrieb und die Sicherheit der Webseite.</p>
+
+    <p><strong>3. Web-Analyse (GoatCounter)</strong><br>
+    Wir nutzen GoatCounter für eine datenschutzfreundliche Web-Analyse. GoatCounter verwendet keine Cookies und erfasst keine personenbezogenen Daten (PII). Alle Besuche werden anonym gezählt.</p>
+
+    <p><strong>4. Ihre Rechte</strong><br>
+    Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten. Da auf dieser Webseite keine personenbezogenen Daten gespeichert und keine Nutzerprofile erstellt werden, werden diese Rechte bereits durch den Verzicht auf Datenerfassung gewahrt. Bei Rückfragen wenden Sie sich bitte an die im Impressum angegebene E-Mail-Adresse.</p>
+</div>
+    <div class="signature">
+        Dieser Raum wird durch Stille und Gesetz geschützt.<br>
+        <span style="font-size: 1.5em; opacity: 0.5;">✦</span>
+    </div>
+    </div>
+</div> <footer>
+        <div>© 2025 RESONANCE OF PRESENCE</div>
+        <div style="margin-top: 10px; font-style: italic;">Die Stille spricht noch.</div>
+    </footer>
+<script data-goatcounter="https://ur-origin.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
