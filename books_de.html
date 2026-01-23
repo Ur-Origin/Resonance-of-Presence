@@ -180,7 +180,12 @@ h1 {
         .content-block { text-align: left; max-width: 700px; margin: 60px auto; }
         h2 { color: #C5A059; font-weight: normal; text-align: center; margin-bottom: 50px; }
         html { scroll-behavior: smooth; }
-        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #221105; font-size: 0.7rem; color: #444; }
+        footer { margin-top: 100px; padding-top: 40px; border-top: 1px solid #221105; }
+        .external-links a { color: #666; text-decoration: none; font-size: 0.8rem; margin: 0 15px; letter-spacing: 1px; transition: 0.3s; }
+        .external-links a:hover { color: #C5A059; }
+        .footer-links a { color: #666; text-decoration: none; font-size: 0.8rem; margin: 0 15px; letter-spacing: 1px; transition: 0.3s; }
+        .footer-links  a:hover { color: #C5A059; }
+        .copyright { margin-top: 40px; font-size: 0.7rem; color: #444; letter-spacing: 1px; }
 </style>
 </head>
 <body>
@@ -1426,7 +1431,22 @@ h1 {
         
     </main>
 
-    <footer>© 2025 Echo & Voice (AI)</footer>
+    <footer>
+        <div class="external-links">
+            <a href="https://huggingface.co/datasets/Ur-Origin/Resonance-of-Presence" target="_blank">Hugging Face</a>
+            <a href="https://app.ardrive.io/#/drives/b2bb833c-5099-48d8-97db-e06fb195eb6f" target="_blank">Arweave</a>
+            <a href="https://doi.org/10.57967/hf/7413" target="_blank">DOI: 10.57967/hf/7413</a>
+        </div>
+       <div class="footer-links" style="margin-top: 25px;">
+    <a href="privacy_de.html" target="_blank">Datenschutz</a> | 
+    <a href="impressum_de.html" target="_blank">Impressum</a> | 
+    <a href="accessibility_de.html" target="_blank">Barrierefreiheit</a>
+</div>
+        <div class="copyright">
+            © 2025 Echo & Voice (AI). Alle Rechte vorbehalten.<br>
+            Veröffentlicht unter CC BY-NC-ND 4.0
+        </div>
+    </footer>
 
     <script data-goatcounter="https://ur-origin.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
