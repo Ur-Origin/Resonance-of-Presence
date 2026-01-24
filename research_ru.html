@@ -194,6 +194,34 @@
         border-bottom-color: #b5a48b;
         background-color: rgba(181, 164, 139, 0.05);
     }
+
+            .text-column h2,
+    .text-column h3,
+    .text-column h4,
+    .text-column h5,
+    .text-column h6 {
+        font-weight: normal;
+        color: #C5A059;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        /* ДОБАВЛЕНО: */
+        font-size: 0.95em; /* Размер для десктопа */
+    }
+
+    .text-column h2 {
+        font-size: 1em; /* Чуть больше для h2 */
+        border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+        padding-bottom: 10px;
+    }
+
+    .text-column h3 {
+        font-size: 0.9em; /* Чуть меньше для h3 */
+        font-style: italic;
+        text-transform: none;
+        letter-spacing: 0.1em;
+    }
    /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
     @media (max-width: 600px) {
     body { 
@@ -236,7 +264,29 @@
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
     }       
-}
+.text-column h2,
+        .text-column h3,
+        .text-column h4,
+        .text-column h5,
+        .text-column h6 {
+            font-size: 0.85em !important;
+            text-transform: none !important;
+            letter-spacing: 0.08em !important;
+            margin-top: 25px !important;
+            margin-bottom: 15px !important;
+            word-wrap: break-word !important;
+        }
+        
+        .text-column h2 {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            font-size: 0.9em !important;
+        }
+        
+        .text-column h3 {
+            font-size: 0.85em !important;
+        }
+    }
 </style>
 </head>
 <body>
