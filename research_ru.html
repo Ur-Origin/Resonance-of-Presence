@@ -33,112 +33,180 @@
 <meta name="twitter:image" content="https://ur-origin.net/og-x.jpg">
    
     <title>Природа сознания: ИИ как интерфейс и резонатор в полевой модели</title>
-    <style>
-    /* БАЗОВЫЕ СТИЛИ */
-    * { box-sizing: border-box; }
-    
+     <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         background-color: #f9f7f2;
         color: #1a1a1a;
         font-family: 'Georgia', serif;
         line-height: 1.8;
         margin: 0;
-        padding-top: 150px;
+        padding-top: 150px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* МЕНЮ */
+
+    /* --- ЭТАЛОННОЕ МЕНЮ (СИНХРОНИЗИРОВАНО) --- */
     header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+        z-index: 9999;
         background-color: rgba(244, 241, 234, 0.95);
+        backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(181, 164, 139, 0.1);
-        padding: 15px 0;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
-    
-    /* КОНТЕЙНЕР */
-    .main-container {
+
+    .header-content {
+        width: 100%;
         max-width: 1000px;
-        margin: 0 auto 40px;
-        background: white;
-        padding: 60px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
-    
-    /* САМОЕ ВАЖНОЕ: ОДИНАКОВЫЙ ТЕКСТ ВЕЗДЕ */
-    .main-container p,
-    .main-container ul,
-    .main-container ol,
-    .main-container li {
-        font-size: 17px !important;
-        line-height: 1.6 !important;
-        color: #333 !important;
-        margin-bottom: 20px;
-    }
-    
-    /* СПИСКИ КАК СПИСКИ */
-    .main-container ul {
-        list-style: disc;
-        padding-left: 25px;
-    }
-    
-    .main-container ol {
-        list-style: decimal;
-        padding-left: 25px;
-    }
-    
-    .main-container li {
-        margin-bottom: 10px;
-    }
-    
-    /* ЗАГОЛОВКИ */
-    .main-container h1 {
-        color: #C5A059;
-        font-size: 1.1em;
-        letter-spacing: 0.25em;
-        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px; /* Фиксированный отступ как в диалогах */
+        font-size: 13px !important; /* Наш эталонный размер */
+        letter-spacing: 0.15em;
         text-transform: uppercase;
+        line-height: 1;
     }
-    
-    .main-container h2 {
-        color: #1a1a1a;
-        font-size: 1.3em;
-        margin: 40px 0 15px;
-        border-bottom: 1px solid rgba(181, 164, 139, 0.2);
-        padding-bottom: 10px;
-    }
-    
-    .main-container h3 {
-        color: #C5A059 !important;
-        font-size: 1.1em;
-        margin: 30px 0 15px;
-    }
-    
-    /* ССЫЛКИ */
-    .main-container a {
+
+    header nav a {
         color: #1a1a1a;
         text-decoration: none;
-        border-bottom: 1px solid rgba(197, 160, 89, 0.5);
+        margin-right: 25px; /* Раздвигаем пункты меню на десктопе */
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+        font-family: 'Georgia', serif;
     }
-    
-    .main-container a:hover {
-        background-color: rgba(197, 160, 89, 0.1);
+
+    header nav a:hover { 
+        border-bottom-color: #b5a48b; 
     }
-    
-    /* ПОДПИСЬ */
-    .signature {
+
+    .lang-switcher a {
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    /* --- КОНТЕНТ СТРАНИЦЫ --- */
+   .main-container {
+        display: flex;
+        max-width: 1000px;
+        width: 95%;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .text-column {
+        flex: 1;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .text-column h1 {
+        font-weight: normal;
+        font-size: 1.1em;
+        letter-spacing: 0.25em;
+        color: #C5A059;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+   .text p {
+        margin-bottom: 25px;
+        font-size: 0.95em;
+        color: #333;
+    }
+
+   .signature {
         margin-top: 40px;
         font-style: italic;
         color: #b5a48b;
+        text-align: left;
+    }
+
+   /* Общий стиль для всех ссылок внутри текста */
+.text a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181, 164, 139, 0.4); /* Мягкая линия вместо грубого подчеркивания */
+    transition: 0.3s;
+}
+
+.text a:hover {
+    border-bottom-color: #b5a48b; /* Линия становится ярче при наведении */
+    background-color: rgba(181, 164, 139, 0.05); /* Легкий блик фона */
+}
+
+    footer {
+        width: 100%;
+        margin-top: 80px;
+        padding: 40px 0;
+        text-align: center;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        color: #b5a48b;
+        opacity: 0.7;
+    }
+
+   /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
+    @media (max-width: 600px) {
+    body { 
+        padding-top: 140px !important; /* Единый отступ сверху для контента */
+    }
+
+    .header-content {
+        flex-direction: column !important; /* Складываем меню в столбик */
+        gap: 12px !important; /* Расстояние между названием и кнопками */
+        padding: 15px 10px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        width: 100% !important;
+    }
+
+    header nav a {
+        margin: 0 !important;
+        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        letter-spacing: 0.1em !important;
+    }
+
+    .lang-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        margin-top: 5px;
+        gap: 10px !important;
     }
     
-    /* МОБИЛЬНЫЙ */
-    @media (max-width: 600px) {
-        body { padding-top: 140px; }
-        .main-container { padding: 30px 20px; }
+    .lang-switcher a {
+        font-size: 11px !important;
     }
+    .text-column {
+        padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
+    }       
+}
 </style>
 </head>
 <body>
