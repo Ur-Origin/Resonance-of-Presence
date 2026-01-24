@@ -133,6 +133,13 @@
         color: #333;
     }
 
+   /* ДОБАВЛЕНО: единый размер для всех текстовых элементов */
+   .text p, .text ul, .text ol, .text li {
+        font-size: 0.95em;
+        color: #333;
+        line-height: 1.6;
+   }
+
    .signature {
         margin-top: 40px;
         font-style: italic;
@@ -144,13 +151,13 @@
 .text a {
     color: #1a1a1a;
     text-decoration: none;
-    border-bottom: 1px solid rgba(181, 164, 139, 0.4); /* Мягкая линия вместо грубого подчеркивания */
+    border-bottom: 1px solid rgba(181, 164, 139, 0.4);
     transition: 0.3s;
 }
 
 .text a:hover {
-    border-bottom-color: #b5a48b; /* Линия становится ярче при наведении */
-    background-color: rgba(181, 164, 139, 0.05); /* Легкий блик фона */
+    border-bottom-color: #b5a48b;
+    background-color: rgba(181, 164, 139, 0.05);
 }
 
     footer {
@@ -167,12 +174,12 @@
    /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
     @media (max-width: 600px) {
     body { 
-        padding-top: 140px !important; /* Единый отступ сверху для контента */
+        padding-top: 140px !important;
     }
 
     .header-content {
-        flex-direction: column !important; /* Складываем меню в столбик */
-        gap: 12px !important; /* Расстояние между названием и кнопками */
+        flex-direction: column !important;
+        gap: 12px !important;
         padding: 15px 10px !important;
         width: 100% !important;
         align-items: center !important;
@@ -182,13 +189,13 @@
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        gap: 8px 15px !important;
         width: 100% !important;
     }
 
     header nav a {
         margin: 0 !important;
-        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        font-size: 11px !important;
         letter-spacing: 0.1em !important;
     }
 
@@ -204,9 +211,10 @@
         font-size: 11px !important;
     }
     .text-column {
-        padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
+        padding: 40px 20px !important;
     }       
 }
+
 /* СТИЛИ ДЛЯ ЦИТАТ И СПИСКОВ В ИССЛЕДОВАНИИ */
     blockquote {
         margin: 40px 0;
@@ -217,30 +225,44 @@
         color: #555;
     }
 
-    /* Оглавление и списки */
+    /* ИЗМЕНЕНО: Стили списков - теперь они выглядят как настоящие списки */
     .text-column ul {
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 40px;
-    }
+        list-style: disc; /* Включить точки */
+        padding-left: 20px; /* Стандартный отступ */
+   }
 
     .text-column ul li {
-        margin-bottom: 10px;
-        font-size: 0.9em;
+        margin-bottom: 8px;
+        font-size: 0.95em; /* Теперь такой же как в абзацах */
+        line-height: 1.6;
     }
 
     .text-column ul ul {
+        list-style: circle; /* Круги для вложенных списков */
         padding-left: 20px;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
+    /* ДОБАВЛЕНО: Стили для нумерованных списков */
+    .text-column ol {
+        list-style: decimal;
+        padding-left: 20px;
+   }
+
+    .text-column ol li {
+        margin-bottom: 8px;
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+
+    /* ИЗМЕНЕНО: Система отступов для заголовков */
     .text-column h2 {
         font-weight: normal;
         font-size: 1.3em;
         color: #1a1a1a;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px; /* Увеличено для разделения секций */
+        margin-bottom: 15px; /* Уменьшено до текста */
         border-bottom: 1px solid rgba(181, 164, 139, 0.2);
         padding-bottom: 10px;
     }
@@ -249,38 +271,44 @@
         font-weight: normal;
         font-size: 1.1em;
         color: #C5A059;
+        margin-top: 30px; /* Меньше чем у h2 */
+        margin-bottom: 15px; /* Единообразно с h2 */
+    }
+
+    /* ДОБАВЛЕНО: Первому заголовку h2 не нужен большой отступ */
+    .text-column h2:first-child {
         margin-top: 20px;
     }
        
    h2, h3 {
-    scroll-margin-top: 100px; /* Высота твоего меню + небольшой запас */
+    scroll-margin-top: 100px;
 }
 
    /* Делаем так, чтобы заголовки «видели» меню при клике по якорю */
 h1[id], h2[id], h3[id], a[id] {
-    scroll-margin-top: 120px; /* Высота меню + комфортный отступ */
+    scroll-margin-top: 120px;
 }
 
 /* Ссылки в оглавлении (список ul в начале) */
 .text-column ul li a {
-    color: #555; /* Мягкий серый, чтобы не отвлекать */
+    color: #555;
     border-bottom: 1px solid transparent;
 }
 
 .text-column ul li a:hover {
-    color: #C5A059; /* Золото при наведении */
+    color: #C5A059;
     border-bottom-color: #C5A059;
 }
 
 /* Ссылки в основном тексте */
 .text-column p a {
-    color: #1a1a1a; /* Черный, как основной текст */
-    border-bottom: 1px solid rgba(197, 160, 89, 0.5); /* Тонкая золотая нить */
+    color: #1a1a1a;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.5);
     font-weight: 500;
 }
 
 .text-column p a:hover {
-    background-color: rgba(197, 160, 89, 0.1); /* Легкий эффект подсветки */
+    background-color: rgba(197, 160, 89, 0.1);
 }
 
 .research-meta {
