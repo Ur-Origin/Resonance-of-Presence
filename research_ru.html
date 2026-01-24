@@ -164,6 +164,36 @@
         opacity: 0.7;
     }
 
+        .text-column a:hover {
+        border-bottom-color: #b5a48b;
+        background-color: rgba(181, 164, 139, 0.05);
+    }
+
+    /* ===== Дополнено ===== */
+    .text-column h2,
+    .text-column h3,
+    .text-column h4,
+    .text-column h5,
+    .text-column h6 {
+        font-weight: normal;
+        color: #C5A059;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+
+    .text-column a {
+        color: #1a1a1a !important;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(181, 164, 139, 0.4);
+        transition: 0.3s;
+    }
+    
+    .text-column a:hover {
+        border-bottom-color: #b5a48b;
+        background-color: rgba(181, 164, 139, 0.05);
+    }
    /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
     @media (max-width: 600px) {
     body { 
@@ -206,102 +236,6 @@
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
     }       
-/* Заголовки h2 и h3 внутри текста - золотистые как h1 */
-.text-column h2,
-.text-column h3 {
-    font-weight: normal;
-    color: #C5A059; /* Тот же золотистый, что и у h1 */
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-
-.text-column h2 {
-    font-size: 1.05em;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
-    padding-bottom: 10px;
-}
-
-.text-column h3 {
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    font-style: italic;
-    text-transform: none;
-}
-
-/* Списки с золотистыми маркерами */
-.text-column ul,
-.text-column ol {
-    margin: 25px 0;
-    padding-left: 25px;
-}
-
-.text-column ul li {
-    margin-bottom: 10px;
-    position: relative;
-    list-style: none;
-}
-
-.text-column ul li:before {
-    content: "•";
-    color: #b5a48b; /* Золотистый цвет маркеров */
-    position: absolute;
-    left: -15px;
-    font-size: 1.2em;
-}
-
-.text-column ol li {
-    margin-bottom: 10px;
-    counter-increment: item;
-}
-
-.text-column ol li:before {
-    content: counter(item) ".";
-    color: #b5a48b; /* Золотистый цвет цифр */
-    margin-right: 8px;
-    font-weight: normal;
-}
-
-/* Цитаты */
-.text-column blockquote {
-    margin: 30px 0;
-    padding: 20px 30px;
-    border-left: 3px solid #b5a48b; /* Золотистая линия слева */
-    background-color: rgba(244, 241, 234, 0.3); /* Светлый фон */
-    font-style: italic;
-    color: #444;
-    line-height: 1.7;
-}
-
-.text-column blockquote p {
-    margin-bottom: 10px !important;
-    font-size: 0.95em !important;
-}
-
-/* Источник цитаты */
-.text-column blockquote footer {
-    margin-top: 10px;
-    font-style: normal;
-    font-size: 0.85em;
-    color: #666;
-    text-align: right;
-}
-
-/* Ссылки внутри цитат */
-.text-column blockquote a {
-    border-bottom-color: rgba(181, 164, 139, 0.3);
-}
-
-/* Горизонтальная линия для разделов */
-.text-column hr {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, 
-        transparent, 
-        rgba(181, 164, 139, 0.3), 
-        transparent);
-    margin: 40px 0;
 }
 </style>
 </head>
