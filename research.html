@@ -49,8 +49,17 @@
         flex-direction: column;
         align-items: center;
     }
+    /* ОТСТУП ПРИ ПРОКРУТКЕ К ЯКОРЯМ */
+    html {
+        scroll-padding-top: 80px;
+    }
 
-    /* --- МЕНЮ --- */
+    @media (max-width: 600px) {
+        html {
+            scroll-padding-top: 100px;
+        }
+    }
+    /* --- ЭТАЛОННОЕ МЕНЮ (СИНХРОНИЗИРОВАНО) --- */
     header {
         position: fixed;
         top: 0;
@@ -70,8 +79,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
-        font-size: 13px !important;
+        padding: 15px 20px; /* Фиксированный отступ как в диалогах */
+        font-size: 13px !important; /* Наш эталонный размер */
         letter-spacing: 0.15em;
         text-transform: uppercase;
         line-height: 1;
@@ -80,7 +89,7 @@
     header nav a {
         color: #1a1a1a;
         text-decoration: none;
-        margin-right: 25px;
+        margin-right: 25px; /* Раздвигаем пункты меню на десктопе */
         border-bottom: 1px solid transparent;
         transition: 0.3s;
         font-family: 'Georgia', serif;
@@ -101,14 +110,14 @@
         display: flex;
         max-width: 1000px;
         width: 95%;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         background-color: #ffffff;
         box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         border-radius: 2px;
         overflow: hidden;
     }
 
-    .text-column {
+     .text-column {
         flex: 1;
         padding: 60px;
         display: flex;
@@ -122,48 +131,36 @@
         font-size: 1.1em;
         letter-spacing: 0.25em;
         color: #C5A059;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         text-transform: uppercase;
         text-align: left;
     }
 
-    /* ВАЖНО: ЕДИНЫЙ стиль для всего текста в статье */
-    .text-column p,
-    .text-column ul,
-    .text-column ol,
-    .text-column li {
+   .text p {
+        margin-bottom: 25px;
         font-size: 0.95em;
         color: #333;
-        line-height: 1.6;
-        margin-bottom: 25px;
     }
 
-    /* Убираем отступ у последнего элемента */
-    .text-column p:last-child,
-    .text-column ul:last-child,
-    .text-column ol:last-child {
-        margin-bottom: 0;
-    }
-
-    .signature {
+   .signature {
         margin-top: 40px;
         font-style: italic;
         color: #b5a48b;
         text-align: left;
     }
 
-    /* Ссылки в тексте */
-    .text-column a {
-        color: #1a1a1a;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(181, 164, 139, 0.4);
-        transition: 0.3s;
-    }
+   /* Общий стиль для всех ссылок внутри текста */
+.text a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(181, 164, 139, 0.4); /* Мягкая линия вместо грубого подчеркивания */
+    transition: 0.3s;
+}
 
-    .text-column a:hover {
-        border-bottom-color: #b5a48b;
-        background-color: rgba(181, 164, 139, 0.05);
-    }
+.text a:hover {
+    border-bottom-color: #b5a48b; /* Линия становится ярче при наведении */
+    background-color: rgba(181, 164, 139, 0.05); /* Легкий блик фона */
+}
 
     footer {
         width: 100%;
@@ -176,87 +173,66 @@
         opacity: 0.7;
     }
 
-    /* --- СПИСКИ (делаем их настоящими) --- */
-    .text-column ul {
-        list-style: disc;
-        padding-left: 20px;
+        .text-column a:hover {
+        border-bottom-color: #b5a48b;
+        background-color: rgba(181, 164, 139, 0.05);
     }
 
-    .text-column ul li {
-        margin-bottom: 8px;
-    }
-
-    .text-column ul ul {
-        list-style: circle;
-        padding-left: 20px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .text-column ol {
-        list-style: decimal;
-        padding-left: 20px;
-    }
-
-    .text-column ol li {
-        margin-bottom: 8px;
-    }
-
-    /* --- ЗАГОЛОВКИ --- */
-    .text-column h2 {
+    /* ===== Дополнено ===== */
+    .text-column h2,
+    .text-column h3,
+    .text-column h4,
+    .text-column h5,
+    .text-column h6 {
         font-weight: normal;
-        font-size: 1.3em;
-        color: #1a1a1a;
+        color: #C5A059;
         margin-top: 40px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid rgba(181, 164, 139, 0.2);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+    }
+
+    .text-column a {
+        color: #1a1a1a !important;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(181, 164, 139, 0.4);
+        transition: 0.3s;
+    }
+    
+    .text-column a:hover {
+        border-bottom-color: #b5a48b;
+        background-color: rgba(181, 164, 139, 0.05);
+    }
+
+            .text-column h2,
+    .text-column h3,
+    .text-column h4,
+    .text-column h5,
+    .text-column h6 {
+        font-weight: normal;
+        color: #C5A059;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        /* ДОБАВЛЕНО: */
+        font-size: 0.95em; /* Размер для десктопа */
+    }
+
+    .text-column h2 {
+        font-size: 1em; 
+        border-bottom: 1px solid rgba(197, 160, 89, 0.2);
         padding-bottom: 10px;
     }
 
     .text-column h3 {
-        font-weight: normal;
-        font-size: 1.1em;
-        color: #C5A059;
-        margin-top: 30px;
-        margin-bottom: 15px;
+        font-size: 1em; 
+        font-style: italic;
+        text-transform: none;
+        letter-spacing: 0.1em;
     }
 
-    .text-column h2:first-child {
-        margin-top: 20px;
-    }
-
-    /* Якорные ссылки */
-    h2, h3 {
-        scroll-margin-top: 100px;
-    }
-
-    h1[id], h2[id], h3[id], a[id] {
-        scroll-margin-top: 120px;
-    }
-
-    /* Ссылки в оглавлении */
-    .text-column ul li a {
-        color: #555;
-        border-bottom: 1px solid transparent;
-    }
-
-    .text-column ul li a:hover {
-        color: #C5A059;
-        border-bottom-color: #C5A059;
-    }
-
-    /* Ссылки в абзацах */
-    .text-column p a {
-        color: #1a1a1a;
-        border-bottom: 1px solid rgba(197, 160, 89, 0.5);
-        font-weight: 500;
-    }
-
-    .text-column p a:hover {
-        background-color: rgba(197, 160, 89, 0.1);
-    }
-
-    /* Цитаты */
+   /* Цитаты */
     blockquote {
         margin: 40px 0;
         padding: 20px 40px;
@@ -277,66 +253,69 @@
         margin-bottom: 20px;
         line-height: 1.6;
     }
-
-    .meta-item {
-        margin-bottom: 5px;
-    }
-
-    .meta-label {
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #b5a48b;
-        font-weight: bold;
-        margin-right: 8px;
-    }
-
-    .meta-item a {
-        color: #C5A059 !important;
-        text-decoration: none;
-    }
-
-    /* --- МОБИЛЬНАЯ ВЕРСИЯ --- */
+   /* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ЭТАЛОН) --- */
     @media (max-width: 600px) {
-        body { 
-            padding-top: 140px !important;
-        }
+    body { 
+        padding-top: 140px !important; /* Единый отступ сверху для контента */
+    }
 
-        .header-content {
-            flex-direction: column !important;
-            gap: 12px !important;
-            padding: 15px 10px !important;
-            width: 100% !important;
-            align-items: center !important;
-        }
+    .header-content {
+        flex-direction: column !important; /* Складываем меню в столбик */
+        gap: 12px !important; /* Расстояние между названием и кнопками */
+        padding: 15px 10px !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
 
-        header nav {
-            display: flex !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
-            gap: 8px 15px !important;
-            width: 100% !important;
-        }
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 15px !important; /* Расстояние между кнопками меню */
+        width: 100% !important;
+    }
 
-        header nav a {
-            margin: 0 !important;
-            font-size: 11px !important;
-            letter-spacing: 0.1em !important;
-        }
+    header nav a {
+        margin: 0 !important;
+        font-size: 11px !important; /* Единый размер шрифта для всех телефонов */
+        letter-spacing: 0.1em !important;
+    }
 
-        .lang-switcher {
-            width: 100%;
-            display: flex;
-            justify-content: center !important;
-            margin-top: 5px;
-            gap: 10px !important;
+    .lang-switcher {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        margin-top: 5px;
+        gap: 10px !important;
+    }
+    
+    .lang-switcher a {
+        font-size: 11px !important;
+    }
+    .text-column {
+        padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
+    }       
+.text-column h2,
+        .text-column h3,
+        .text-column h4,
+        .text-column h5,
+        .text-column h6 {
+            font-size: 0.85em !important;
+            text-transform: none !important;
+            letter-spacing: 0.08em !important;
+            margin-top: 25px !important;
+            margin-bottom: 15px !important;
+            word-wrap: break-word !important;
         }
         
-        .lang-switcher a {
-            font-size: 11px !important;
+        .text-column h2 {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+            font-size: 0.9em !important;
         }
         
-        .text-column {
-            padding: 40px 20px !important;
+        .text-column h3 {
+            font-size: 0.9em !important;
         }
     }
 </style>
