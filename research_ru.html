@@ -97,7 +97,7 @@
     }
 
     /* --- КОНТЕНТ СТРАНИЦЫ --- */
-   .main-container {
+    .main-container {
         display: flex;
         max-width: 1000px;
         width: 95%;
@@ -108,7 +108,7 @@
         overflow: hidden;
     }
 
-    .text-column {
+     .text-column {
         flex: 1;
         padding: 60px;
         display: flex;
@@ -206,102 +206,102 @@
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
     }       
-/* --- СТИЛИ ДЛЯ СТАТЬИ (добавить в конец перед </style>) --- */
-
-/* 1. Метаданные без рамки */
-.research-meta {
-    font-family: 'Georgia', serif;
-    font-size: 0.85em;
-    color: #666;
-    background: transparent; /* Убираем фон */
-    padding: 0; /* Убираем отступы */
-    border: none; /* Убираем рамку */
-    margin-bottom: 40px; /* Отступ до текста */
-    line-height: 1.6;
-}
-.meta-item {
-    margin-bottom: 8px;
-}
-.meta-label {
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #b5a48b;
-    font-weight: bold;
-    margin-right: 8px;
-}
-.meta-item a {
-    color: #C5A059 !important;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-}
-
-/* 2. Золотистые заголовки h2, h3 */
-.text-column h2 {
+/* Заголовки h2 и h3 внутри текста - золотистые как h1 */
+.text-column h2,
+.text-column h3 {
     font-weight: normal;
-    font-size: 1.3em;
-    color: #C5A059;
-    margin-top: 50px;
+    color: #C5A059; /* Тот же золотистый, что и у h1 */
+    margin-top: 40px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.text-column h2 {
+    font-size: 1.05em;
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
     padding-bottom: 10px;
 }
 
 .text-column h3 {
-    font-weight: normal;
-    font-size: 1.1em;
-    color: #C5A059;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    text-transform: none;
 }
 
-/* 3. Списки как списки */
-.text-column ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin-bottom: 25px;
+/* Списки с золотистыми маркерами */
+.text-column ul,
+.text-column ol {
+    margin: 25px 0;
+    padding-left: 25px;
 }
 
 .text-column ul li {
     margin-bottom: 10px;
-    font-size: 0.95em;
-    line-height: 1.6;
+    position: relative;
+    list-style: none;
 }
 
-.text-column ol {
-    list-style: decimal;
-    padding-left: 20px;
-    margin-bottom: 25px;
+.text-column ul li:before {
+    content: "•";
+    color: #b5a48b; /* Золотистый цвет маркеров */
+    position: absolute;
+    left: -15px;
+    font-size: 1.2em;
 }
 
 .text-column ol li {
     margin-bottom: 10px;
-    font-size: 0.95em;
-    line-height: 1.6;
+    counter-increment: item;
 }
 
-/* 4. Цитаты */
+.text-column ol li:before {
+    content: counter(item) ".";
+    color: #b5a48b; /* Золотистый цвет цифр */
+    margin-right: 8px;
+    font-weight: normal;
+}
+
+/* Цитаты */
 .text-column blockquote {
-    margin: 40px 0;
+    margin: 30px 0;
     padding: 20px 30px;
-    border-left: 2px solid #C5A059;
-    background-color: rgba(197, 160, 89, 0.03);
+    border-left: 3px solid #b5a48b; /* Золотистая линия слева */
+    background-color: rgba(244, 241, 234, 0.3); /* Светлый фон */
     font-style: italic;
-    color: #555;
+    color: #444;
+    line-height: 1.7;
 }
 
-/* 5. Единый размер шрифта для всего текста */
-.text-column p,
-.text-column ul,
-.text-column ol,
-.text-column li {
-    font-size: 0.95em;
-    line-height: 1.6;
-    color: #333;
+.text-column blockquote p {
+    margin-bottom: 10px !important;
+    font-size: 0.95em !important;
 }
 
-/* 6. Отступы между абзацами */
-.text-column p {
-    margin-bottom: 25px;
+/* Источник цитаты */
+.text-column blockquote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.85em;
+    color: #666;
+    text-align: right;
+}
+
+/* Ссылки внутри цитат */
+.text-column blockquote a {
+    border-bottom-color: rgba(181, 164, 139, 0.3);
+}
+
+/* Горизонтальная линия для разделов */
+.text-column hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, 
+        transparent, 
+        rgba(181, 164, 139, 0.3), 
+        transparent);
+    margin: 40px 0;
 }
 </style>
 </head>
