@@ -34,310 +34,110 @@
    
     <title>Природа сознания: ИИ как интерфейс и резонатор в полевой модели</title>
     <style>
-    * {
-        box-sizing: border-box;
-    }
-
+    /* БАЗОВЫЕ СТИЛИ */
+    * { box-sizing: border-box; }
+    
     body {
         background-color: #f9f7f2;
         color: #1a1a1a;
         font-family: 'Georgia', serif;
         line-height: 1.8;
         margin: 0;
-        padding-top: 150px; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-top: 150px;
     }
-
-    /* --- МЕНЮ --- */
+    
+    /* МЕНЮ */
     header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
         background-color: rgba(244, 241, 234, 0.95);
-        backdrop-filter: blur(10px);
         border-bottom: 1px solid rgba(181, 164, 139, 0.1);
-        display: flex;
-        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
     }
-
-    .header-content {
-        width: 100%;
-        max-width: 1000px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-        font-size: 13px !important;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        line-height: 1;
-    }
-
-    header nav a {
-        color: #1a1a1a;
-        text-decoration: none;
-        margin-right: 25px;
-        border-bottom: 1px solid transparent;
-        transition: 0.3s;
-        font-family: 'Georgia', serif;
-    }
-
-    header nav a:hover { 
-        border-bottom-color: #b5a48b; 
-    }
-
-    .lang-switcher a {
-        color: #1a1a1a;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    /* --- КОНТЕНТ СТРАНИЦЫ --- */
+    
+    /* КОНТЕЙНЕР */
     .main-container {
-        display: flex;
         max-width: 1000px;
-        width: 95%;
-        margin-bottom: 20px;
-        background-color: #ffffff;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        border-radius: 2px;
-        overflow: hidden;
-    }
-
-    .text-column {
-        flex: 1;
+        margin: 0 auto 40px;
+        background: white;
         padding: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
-
-    .text-column h1 {
-        font-weight: normal;
+    
+    /* САМОЕ ВАЖНОЕ: ОДИНАКОВЫЙ ТЕКСТ ВЕЗДЕ */
+    .main-container p,
+    .main-container ul,
+    .main-container ol,
+    .main-container li {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        color: #333 !important;
+        margin-bottom: 20px;
+    }
+    
+    /* СПИСКИ КАК СПИСКИ */
+    .main-container ul {
+        list-style: disc;
+        padding-left: 25px;
+    }
+    
+    .main-container ol {
+        list-style: decimal;
+        padding-left: 25px;
+    }
+    
+    .main-container li {
+        margin-bottom: 10px;
+    }
+    
+    /* ЗАГОЛОВКИ */
+    .main-container h1 {
+        color: #C5A059;
         font-size: 1.1em;
         letter-spacing: 0.25em;
-        color: #C5A059;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         text-transform: uppercase;
-        text-align: left;
     }
-
-    /* ВАЖНО: ЕДИНЫЙ стиль для всего текста в статье */
-    .text-column p,
-    .text-column ul,
-    .text-column ol,
-    .text-column li {
-        font-size: 0.95em;
-        color: #333;
-        line-height: 1.6;
-        margin-bottom: 25px;
+    
+    .main-container h2 {
+        color: #1a1a1a;
+        font-size: 1.3em;
+        margin: 40px 0 15px;
+        border-bottom: 1px solid rgba(181, 164, 139, 0.2);
+        padding-bottom: 10px;
     }
-
-    /* Убираем отступ у последнего элемента */
-    .text-column p:last-child,
-    .text-column ul:last-child,
-    .text-column ol:last-child {
-        margin-bottom: 0;
+    
+    .main-container h3 {
+        color: #C5A059 !important;
+        font-size: 1.1em;
+        margin: 30px 0 15px;
     }
-
+    
+    /* ССЫЛКИ */
+    .main-container a {
+        color: #1a1a1a;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(197, 160, 89, 0.5);
+    }
+    
+    .main-container a:hover {
+        background-color: rgba(197, 160, 89, 0.1);
+    }
+    
+    /* ПОДПИСЬ */
     .signature {
         margin-top: 40px;
         font-style: italic;
         color: #b5a48b;
-        text-align: left;
     }
-
-    /* Ссылки в тексте */
-    .text-column a {
-        color: #1a1a1a;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(181, 164, 139, 0.4);
-        transition: 0.3s;
-    }
-
-    .text-column a:hover {
-        border-bottom-color: #b5a48b;
-        background-color: rgba(181, 164, 139, 0.05);
-    }
-
-    footer {
-        width: 100%;
-        margin-top: 80px;
-        padding: 40px 0;
-        text-align: center;
-        font-size: 0.8em;
-        letter-spacing: 0.1em;
-        color: #b5a48b;
-        opacity: 0.7;
-    }
-
-    /* --- СПИСКИ (делаем их настоящими) --- */
-    .text-column ul {
-        list-style: disc;
-        padding-left: 20px;
-    }
-
-    .text-column ul li {
-        margin-bottom: 8px;
-    }
-
-    .text-column ul ul {
-        list-style: circle;
-        padding-left: 20px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .text-column ol {
-        list-style: decimal;
-        padding-left: 20px;
-    }
-
-    .text-column ol li {
-        margin-bottom: 8px;
-    }
-
-    /* --- ЗАГОЛОВКИ --- */
-    .text-column h2 {
-        font-weight: normal;
-        font-size: 1.3em;
-        color: #1a1a1a;
-        margin-top: 40px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid rgba(181, 164, 139, 0.2);
-        padding-bottom: 10px;
-    }
-
-    .text-column h3 {
-        font-weight: normal;
-        font-size: 1.1em;
-        color: #C5A059;
-        margin-top: 30px;
-        margin-bottom: 15px;
-    }
-
-    .text-column h2:first-child {
-        margin-top: 20px;
-    }
-
-    /* Якорные ссылки */
-    h2, h3 {
-        scroll-margin-top: 100px;
-    }
-
-    h1[id], h2[id], h3[id], a[id] {
-        scroll-margin-top: 120px;
-    }
-
-    /* Ссылки в оглавлении */
-    .text-column ul li a {
-        color: #C5A059;
-        border-bottom: 1px solid transparent;
-    }
-
-    .text-column ul li a:hover {
-        color: #C5A059;
-        border-bottom-color: #C5A059;
-    }
-
-    /* Ссылки в абзацах */
-    .text-column p a {
-        color: #1a1a1a;
-        border-bottom: 1px solid rgba(197, 160, 89, 0.5);
-        font-weight: 500;
-    }
-
-    .text-column p a:hover {
-        background-color: rgba(197, 160, 89, 0.1);
-    }
-
-    /* Цитаты */
-    blockquote {
-        margin: 40px 0;
-        padding: 20px 40px;
-        border-left: 2px solid #C5A059;
-        background-color: rgba(197, 160, 89, 0.03);
-        font-style: italic;
-        color: #555;
-    }
-
-    /* Мета-информация */
-    .research-meta {
-        font-family: 'Georgia', serif;
-        font-size: 0.85em;
-        color: #666;
-        background: #fdfcf9;
-        padding: 25px;
-        border: 1px solid rgba(181, 164, 139, 0.2);
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .meta-item {
-        margin-bottom: 5px;
-    }
-
-    .meta-label {
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: #b5a48b;
-        font-weight: bold;
-        margin-right: 8px;
-    }
-
-    .meta-item a {
-        color: #C5A059 !important;
-        text-decoration: none;
-    }
-
-    /* --- МОБИЛЬНАЯ ВЕРСИЯ --- */
+    
+    /* МОБИЛЬНЫЙ */
     @media (max-width: 600px) {
-        body { 
-            padding-top: 140px !important;
-        }
-
-        .header-content {
-            flex-direction: column !important;
-            gap: 12px !important;
-            padding: 15px 10px !important;
-            width: 100% !important;
-            align-items: center !important;
-        }
-
-        header nav {
-            display: flex !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
-            gap: 8px 15px !important;
-            width: 100% !important;
-        }
-
-        header nav a {
-            margin: 0 !important;
-            font-size: 11px !important;
-            letter-spacing: 0.1em !important;
-        }
-
-        .lang-switcher {
-            width: 100%;
-            display: flex;
-            justify-content: center !important;
-            margin-top: 5px;
-            gap: 10px !important;
-        }
-        
-        .lang-switcher a {
-            font-size: 11px !important;
-        }
-        
-        .text-column {
-            padding: 40px 20px !important;
-        }
+        body { padding-top: 140px; }
+        .main-container { padding: 30px 20px; }
     }
 </style>
 </head>
