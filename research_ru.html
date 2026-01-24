@@ -206,6 +206,102 @@
     .text-column {
         padding: 40px 20px !important; /* Чтобы текст на мобильном не вплотную к краям */
     }       
+/* --- СТИЛИ ДЛЯ СТАТЬИ (добавить в конец перед </style>) --- */
+
+/* 1. Метаданные без рамки */
+.research-meta {
+    font-family: 'Georgia', serif;
+    font-size: 0.85em;
+    color: #666;
+    background: transparent; /* Убираем фон */
+    padding: 0; /* Убираем отступы */
+    border: none; /* Убираем рамку */
+    margin-bottom: 40px; /* Отступ до текста */
+    line-height: 1.6;
+}
+.meta-item {
+    margin-bottom: 8px;
+}
+.meta-label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #b5a48b;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.meta-item a {
+    color: #C5A059 !important;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+/* 2. Золотистые заголовки h2, h3 */
+.text-column h2 {
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #C5A059;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    padding-bottom: 10px;
+}
+
+.text-column h3 {
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #C5A059;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* 3. Списки как списки */
+.text-column ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.text-column ul li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.text-column ol {
+    list-style: decimal;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.text-column ol li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* 4. Цитаты */
+.text-column blockquote {
+    margin: 40px 0;
+    padding: 20px 30px;
+    border-left: 2px solid #C5A059;
+    background-color: rgba(197, 160, 89, 0.03);
+    font-style: italic;
+    color: #555;
+}
+
+/* 5. Единый размер шрифта для всего текста */
+.text-column p,
+.text-column ul,
+.text-column ol,
+.text-column li {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 6. Отступы между абзацами */
+.text-column p {
+    margin-bottom: 25px;
 }
 </style>
 </head>
