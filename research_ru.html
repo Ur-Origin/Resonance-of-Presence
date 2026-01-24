@@ -49,7 +49,16 @@
         flex-direction: column;
         align-items: center;
     }
+    /* ОТСТУП ПРИ ПРОКРУТКЕ К ЯКОРЯМ */
+    html {
+        scroll-padding-top: 120px;
+    }
 
+    @media (max-width: 600px) {
+        html {
+            scroll-padding-top: 100px;
+        }
+    }
     /* --- ЭТАЛОННОЕ МЕНЮ (СИНХРОНИЗИРОВАНО) --- */
     header {
         position: fixed;
